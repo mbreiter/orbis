@@ -1,0 +1,7 @@
+JSON module
+===========
+
+.. automodule:: JSON
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,17 @@
+PythonClientAPI package
+=======================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    PythonClientAPI.libs
+
+Module contents
+---------------
+
+.. automodule:: PythonClientAPI
+    :members:
+    :undoc-members:
+    :show-inheritance:

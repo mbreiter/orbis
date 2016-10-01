@@ -1,0 +1,429 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Configuring your IDE &mdash; The Orbis Challenge 2016  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/custom-styles.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="The Orbis Challenge 2016  documentation" href="index.html"/>
+        <link rel="next" title="Command Line Arguments" href="commands.html"/>
+        <link rel="prev" title="Quick start" href="quick.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> The Orbis Challenge 2016
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing Java/Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick.html">Quick Start Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Configuring your IDE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#intellij">IntelliJ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setup">Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-and-debugging-a-game">Running and debugging a game</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#eclipse">Eclipse</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Running and debugging a game</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pycharm">PyCharm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Running and debugging a game</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#other-ides">Other IDEs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="commands.html">Command Line Arguments</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="game.html">The Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_maps.html">Making custom maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="challenge.html">Scoring and the Tournament</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="javaapi.html">Java API Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pythonapi.html">Python API Basics</a></li>
+<li class="toctree-l1"><a class="reference external" href="_static/javadoc/index.html#://">Java API Javadoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydoc/PythonClientAPI.libs.Game.html">Python API Docstrings</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">The Orbis Challenge 2016</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Configuring your IDE</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/ide.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="configuring-your-ide">
+<h1>Configuring your IDE<a class="headerlink" href="#configuring-your-ide" title="Permalink to this headline">¶</a></h1>
+<p>We have provided pre-made projects for 3 IDEs: IntelliJ, Eclipse, and PyCharm. The benefits of using an IDE include inline documentation, autocompletion of functions,
+and breakpoints/step-through debugging.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Due to varying environment setups on different platforms, the run configurations in our premade projects may not work in your environment. Unfortunately, due to time
+restrictions we may not be able to provide support for every IDE. If you encounter issues, please check your IDE&#8217;s help pages first.</p>
+</div>
+<p>If you want to set up your IDE yourself, see <a class="reference internal" href="#other-ide"><span class="std std-ref">Other IDEs</span></a>.</p>
+<div class="section" id="intellij">
+<h2>IntelliJ<a class="headerlink" href="#intellij" title="Permalink to this headline">¶</a></h2>
+<div class="tldr admonition">
+<p class="first admonition-title">TL;DR</p>
+<p>Open the starter kit as a <strong>project</strong>.</p>
+<p>Run the launcher from the .bat or .sh file, or from the included Run Configuration.</p>
+<p>Select &#8220;Start with IDE&#8221; on one team.</p>
+<p class="last">Run your AI from the Debug Configuration corresponding to the team you selected.</p>
+</div>
+<div class="section" id="setup">
+<h3>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Download the IntelliJ starter kit</li>
+<li>Extract the contents to a folder of your choice</li>
+<li>Start IntelliJ and open the project. You should select the folder you extracted to in Step 2.</li>
+</ol>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">IntelliJ may show a prompt saying the Project SDK is not setup. You will have to follow the prompts and select your JDK.</p>
+</div>
+</div>
+<div class="section" id="running-and-debugging-a-game">
+<h3>Running and debugging a game<a class="headerlink" href="#running-and-debugging-a-game" title="Permalink to this headline">¶</a></h3>
+<p>First, start the Launcher. You can start it once, and leave it open between games.
+You can start the Launcher from the shell script in the Cyber Team Zero folder, or from IntelliJ by selecting <em>Run &gt; Run... &gt; Launcher</em></p>
+<img alt="_images/IntelliJ1.png" class="align-center" src="_images/IntelliJ1.png" />
+<img alt="_images/IntelliJ2.png" class="align-center" src="_images/IntelliJ2.png" />
+<p>Now you can start running games to debug and test your AI.</p>
+<ol class="arabic">
+<li><p class="first">Select &#8220;Start with IDE&#8221; for one of the teams.</p>
+</li>
+<li><p class="first">Configure the other settings how you like. If you&#8217;d like your AI to combat itself simply browse to its source file in the other team.</p>
+</li>
+<li><p class="first">When you are ready to run a game, click &#8220;Start&#8221; in the Launcher.
+The Launcher will now wait for you to start your AI from your IDE.</p>
+</li>
+<li><p class="first">Go back to IntelliJ, select <em>Run &gt; Debug...</em></p>
+<blockquote>
+<div><img alt="_images/IntelliJ3.png" class="align-center" src="_images/IntelliJ3.png" />
+</div></blockquote>
+</li>
+<li><p class="first">Select &#8216;PlayerAI as Amber&#8217; (Or &#8216;as Blue&#8217;). In subsequent runs you can click the little Debug icon in your toolbar.</p>
+<blockquote>
+<div><img alt="_images/IntelliJ4.png" class="align-center" src="_images/IntelliJ4.png" />
+</div></blockquote>
+</li>
+</ol>
+<p>The game will now start! You can put breakpoints in your code as you wish. Keep in mind that you do not need to close and reopen the launcher;
+After exiting the game, you can rerun it by starting at Step 3.</p>
+</div>
+</div>
+<div class="section" id="eclipse">
+<h2>Eclipse<a class="headerlink" href="#eclipse" title="Permalink to this headline">¶</a></h2>
+<div class="tldr admonition">
+<p class="first admonition-title">TL;DR</p>
+<p>Open the starter kit as a <strong>workspace</strong>.</p>
+<p>Run the launcher from the .bat or .sh file, or from the included External Tool configuration.</p>
+<p>Select &#8220;Start with IDE&#8221; on one team.</p>
+<p class="last">Run your AI from the Debug Configuration corresponding to the team you selected.</p>
+</div>
+<div class="section" id="id1">
+<h3>Setup<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Download the Eclipse starter kit</li>
+<li>Extract the contents to a folder of your choice.</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The contents are an Eclipse workspace, not a project.</p>
+</div>
+<ol class="arabic" start="3">
+<li><p class="first">Start Eclipse, and set the workspace to the folder you chose in Step 2.</p>
+<blockquote>
+<div><img alt="_images/Eclipse1.png" class="align-center" src="_images/Eclipse1.png" />
+</div></blockquote>
+</li>
+<li><p class="first">The CTZ-AI project will appear in the project Window.</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This project was made in Eclipse 4.5.2 (Mars) and may not open correctly in older versions of Eclipse.
+On the other hand, if you are using a newer version of Eclipse, then you may get a warning about the workspace being from an older version and that it must be upgraded.
+Just like most warnings in life, you can safely ignore this, and click OK to upgrade the project.</p>
+</div>
+</div>
+<div class="section" id="id2">
+<h3>Running and debugging a game<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>First, start the Launcher. You can start it once, and leave it open between games.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can start the launcher from within Eclipse by selecting Run &gt; External Tools &gt; Launcher.</p>
+</div>
+<p>Now you can start running games to debug and test your AI.</p>
+<ol class="arabic">
+<li><p class="first">Select &#8220;Start with IDE&#8221; for one of the teams.</p>
+</li>
+<li><p class="first">Configure the other settings how you like. If you&#8217;d like your AI to combat itself simply browse to its source file in the other team.</p>
+</li>
+<li><p class="first">When you are ready to run a game, click &#8220;Start&#8221; in the Launcher.
+The Launcher will now wait for you to start your AI from your IDE.</p>
+</li>
+<li><p class="first">Go back to Eclipse, select <em>Run &gt; Debug Configurations...</em></p>
+<blockquote>
+<div><img alt="_images/Eclipse3.png" class="align-center" src="_images/Eclipse3.png" />
+</div></blockquote>
+</li>
+<li><p class="first">Select &#8216;PlayerAI as Amber&#8217; (Or &#8216;as Blue&#8217; if you ran the Launcher with Blue Debugging in Step 2.</p>
+<blockquote>
+<div><img alt="_images/Eclipse4.png" class="align-center" src="_images/Eclipse4.png" />
+</div></blockquote>
+</li>
+<li><p class="first">Click &#8220;Debug&#8221; at the bottom of the dialog.</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In subsequent runs you can click the little Debug icon in your toolbar.</p>
+</div>
+<img alt="_images/Eclipse5.png" class="align-center" src="_images/Eclipse5.png" />
+<p>The game will now start! You can put breakpoints in your code as you wish. Keep in mind that you do not need to close and reopen the launcher;
+After exiting the game, you can rerun it by starting at Step 3.</p>
+</div>
+</div>
+<div class="section" id="pycharm">
+<h2>PyCharm<a class="headerlink" href="#pycharm" title="Permalink to this headline">¶</a></h2>
+<div class="tldr admonition">
+<p class="first admonition-title">TL;DR</p>
+<p>Open the starter kit as a <strong>project</strong>.</p>
+<p>Run the launcher from the .bat or .sh file.</p>
+<p>Select &#8220;Start with IDE&#8221; on one team.</p>
+<p class="last">Run your AI from the Debug Configuration corresponding to the team you selected.</p>
+</div>
+<div class="section" id="id3">
+<h3>Setup<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Download the PyCharm starter kit</li>
+<li>Extract the contents to a folder of your choice</li>
+<li>Start PyCharm and open the project. You should select the folder you extracted to in Step 2.</li>
+</ol>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">PyCharm may show a prompt saying the Python Interpreter for the Project is not setup. You will have to follow the prompts and select your Python Install directory.</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>Running and debugging a game<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>First, start the Launcher. You can start it once, and leave it open between games.</p>
+<ol class="arabic simple">
+<li>Select &#8220;Start with IDE&#8221; for one of the teams.</li>
+<li>Configure the other settings how you like. If you&#8217;d like your AI to combat itself simply browse to its source file in the other team.</li>
+<li>When you are ready to run a game, click &#8220;Start&#8221; in the Launcher.
+The Launcher will now wait for you to start your AI from your IDE.</li>
+<li>Go back to PyCharm, select <em>Run &gt; Debug...</em></li>
+</ol>
+<img alt="_images/PyCharm3.png" class="align-center" src="_images/PyCharm3.png" />
+<ol class="arabic simple">
+<li>Select &#8216;PlayerAI as Amber&#8217; (Or &#8216;as Blue&#8217; if you selected the Blue team to Start with IDE in the launcher). In subsequent runs you can click the little Debug icon in your toolbar.</li>
+</ol>
+<img alt="_images/PyCharm4.png" class="align-center" src="_images/PyCharm4.png" />
+<p>The game will now start! You can put breakpoints in your code as you wish. Keep in mind that you do not need to close and reopen the launcher;
+After exiting the game, you can rerun it by starting at Step 3.</p>
+</div>
+</div>
+<div class="section" id="other-ides">
+<span id="other-ide"></span><h2>Other IDEs<a class="headerlink" href="#other-ides" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Create a project in your IDE, and reference the CTZ-Client.jar or copy RunPythonClient.py and the PythonClientAPI folder.</p>
+</li>
+<li><p class="first">Have your IDE use RunClient as the main class (Java) or the RunPythonClient.py Script (Python).
+Your client launch command parameters should look like:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">c</span> <span class="n">_lastconfig</span> <span class="o">-</span><span class="n">u</span> <span class="o">&lt;</span><span class="n">team</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Where &lt;team&gt; is Amber or Blue (depending on which team you select as &#8220;Start with IDE&#8221; in the launcher)</p>
+</li>
+<li><p class="first">For Java: Make sure your PlayerAI file is included in the classpath</p>
+<p>For Python: in addition to the above command parameters, you must also pass a third one:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">cp</span> <span class="o">&lt;</span><span class="n">path</span> <span class="n">to</span> <span class="n">folder</span> <span class="n">where</span> <span class="n">PlayerAI</span><span class="o">.</span><span class="n">py</span> <span class="ow">is</span> <span class="n">located</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Be weary of spaces in the folder path.</p>
+</li>
+<li><p class="first">(Important!) Make sure your &#8220;Working Directory&#8221; is set to the folder Launcher.jar is located in.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="commands.html" class="btn btn-neutral float-right" title="Command Line Arguments" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quick.html" class="btn btn-neutral" title="Quick start" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Orbis Access (Canada) Ltd..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/video.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

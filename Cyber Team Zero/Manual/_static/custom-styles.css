@@ -1,0 +1,18 @@
+.admonition.tldr {
+	background: #FAEFE7;
+	padding: 12px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.admonition.tldr .admonition-title {
+	background: #DE986A;
+}
+
+.admonition.tldr p.last {
+	margin-bottom: 0;
+}
+
+video {
+	border: 2px solid black;
+}

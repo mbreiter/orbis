@@ -1,0 +1,18 @@
+PythonClientAPI.libs package
+============================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    PythonClientAPI.libs.Game
+    PythonClientAPI.libs.Navigation
+
+Module contents
+---------------
+
+.. automodule:: PythonClientAPI.libs
+    :members:
+    :undoc-members:
+    :show-inheritance:

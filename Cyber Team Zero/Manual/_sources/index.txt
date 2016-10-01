@@ -1,0 +1,48 @@
+Welcome!
+================================
+Welcome to the 2016 Orbis Challenge! 
+This year's Orbis Challenge will involve creating an AI for **Cyber Team Zero**, where 2 squads of robot super-soldiers use cunning tactics to capture control points and eliminate the enemy squad.
+
+.. NOTE::
+  Even if you are familiar with Java or Python, you should still read the documentation. The documents contain important information about the game, grading and competition rules.
+
+
+Setting Up
+----------
+.. admonition:: TL;DR
+   :class: tldr
+   
+   - :doc:`quick`
+   - :doc:`game`
+   - :doc:`challenge`
+   - :doc:`javaapi` and :doc:`pythonapi`
+
+.. toctree::
+   :maxdepth: 5
+   
+   Installing Java/Python <installing>
+   Quick Start Guide <quick>
+   Configuring your IDE <ide>
+   Command Line Arguments <commands>
+
+
+What is Cyber Team Zero?
+--------------------------
+.. toctree::
+   :maxdepth: 3
+
+   The Game <game>   
+   Making custom maps <custom_maps>
+   Scoring and the Tournament <challenge>
+   FAQ <faq>
+
+API Documentation
+-----------------
+.. toctree::
+   :maxdepth: 5
+   
+   Java API Basics <javaapi>
+   Python API Basics <pythonapi>
+   Java API Javadoc <_static/javadoc/index.html#://>
+   Python API Docstrings <pydoc/PythonClientAPI.libs.Game>
+

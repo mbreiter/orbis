@@ -1,0 +1,427 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Scoring and the Tournament &mdash; The Orbis Challenge 2016  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/custom-styles.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="The Orbis Challenge 2016  documentation" href="index.html"/>
+        <link rel="next" title="FAQ" href="faq.html"/>
+        <link rel="prev" title="Making custom maps" href="custom_maps.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> The Orbis Challenge 2016
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing Java/Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ide.html">Configuring your IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands.html">Command Line Arguments</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="game.html">The Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_maps.html">Making custom maps</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Scoring and the Tournament</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#grading-scheme">Grading Scheme</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#point-worths">Point worths</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#eliminating-the-entire-enemy-squad">Eliminating the entire enemy squad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#destroying-an-enemy-unit">Destroying an enemy unit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hitting-shooting-an-enemy-unit">Hitting (shooting) an enemy unit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#obtaining-a-pick-up">Obtaining a pick up</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#neutralizing-a-control-point">Neutralizing a control point</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#capturing-a-control-point">Capturing a control point</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#holding-a-control-point">Holding a control point</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#losing-a-control-point">Losing a control point</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stalemate">Stalemate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exploring-the-map">Exploring the map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#turn-survival-bonus">Turn survival bonus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#game-end-bonus">Game end bonus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#submissions">Submissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#competition-format">Competition Format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#settings">Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#elimination">Elimination</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#qualifying">Qualifying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#round-robin-finals">Round Robin Finals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#algorithm-and-code-review">Algorithm and Code Review</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#presentations">Presentations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="javaapi.html">Java API Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pythonapi.html">Python API Basics</a></li>
+<li class="toctree-l1"><a class="reference external" href="_static/javadoc/index.html#://">Java API Javadoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydoc/PythonClientAPI.libs.Game.html">Python API Docstrings</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">The Orbis Challenge 2016</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Scoring and the Tournament</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/challenge.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="scoring-and-the-tournament">
+<h1>Scoring and the Tournament<a class="headerlink" href="#scoring-and-the-tournament" title="Permalink to this headline">¶</a></h1>
+<p>Here is where you can find information on how to do well in the Challenge.</p>
+<div class="section" id="grading-scheme">
+<h2>Grading Scheme<a class="headerlink" href="#grading-scheme" title="Permalink to this headline">¶</a></h2>
+<p>Scores are calculated at the end of the game. The final scores will be shown in the game, and a detailed breakdown will be logged in the server log.</p>
+<div class="section" id="point-worths">
+<h3>Point worths<a class="headerlink" href="#point-worths" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="37%" />
+<col width="63%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Eliminating the entire enemy squad</td>
+<td>5000 points</td>
+</tr>
+<tr class="row-even"><td>Destroying an enemy unit</td>
+<td>100 points per enemy destroyed</td>
+</tr>
+<tr class="row-odd"><td>Hitting (shooting) an enemy unit</td>
+<td>10 points per 1 damage dealt</td>
+</tr>
+<tr class="row-even"><td>Obtaining a pick up</td>
+<td>50 points</td>
+</tr>
+<tr class="row-odd"><td>Neutralizing a control point</td>
+<td>50 points</td>
+</tr>
+<tr class="row-even"><td>Capturing a control point</td>
+<td>200 points</td>
+</tr>
+<tr class="row-odd"><td>Holding a control point</td>
+<td>75 points per turn held</td>
+</tr>
+<tr class="row-even"><td>Losing a control point</td>
+<td>-725 points</td>
+</tr>
+<tr class="row-odd"><td>Stalemate</td>
+<td>800 points</td>
+</tr>
+<tr class="row-even"><td>Exploring the map</td>
+<td>5 points per new tile landed on</td>
+</tr>
+<tr class="row-odd"><td>Turn survival bonus</td>
+<td>20 points per turn survived</td>
+</tr>
+<tr class="row-even"><td>Game end bonus</td>
+<td>10 points per turn left until draw, squared</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="eliminating-the-entire-enemy-squad">
+<h4>Eliminating the entire enemy squad<a class="headerlink" href="#eliminating-the-entire-enemy-squad" title="Permalink to this headline">¶</a></h4>
+<p>Destroying the last of the 4 enemy units, while the enemy team does not have any Mainframes will score you 5000 points, and end the game.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The winner of the round is the one with more <strong>points</strong>, not more enemy unit <strong>eliminations</strong>. This means you can get this bonus, and still lose the game.</p>
+</div>
+</div>
+<div class="section" id="destroying-an-enemy-unit">
+<h4>Destroying an enemy unit<a class="headerlink" href="#destroying-an-enemy-unit" title="Permalink to this headline">¶</a></h4>
+<p>If your shot drops an enemy unit&#8217;s health below 0, you are awarded 100 points, in addition to the points you get for damaging the enemy unit.</p>
+</div>
+<div class="section" id="hitting-shooting-an-enemy-unit">
+<h4>Hitting (shooting) an enemy unit<a class="headerlink" href="#hitting-shooting-an-enemy-unit" title="Permalink to this headline">¶</a></h4>
+<p>Dealing damage to an enemy unit is worth 10 points per 1 point damage dealt. So hitting a unit with a weapon that does 25 damage is worth 250 points, even if that unit had less than 25 health.</p>
+</div>
+<div class="section" id="obtaining-a-pick-up">
+<h4>Obtaining a pick up<a class="headerlink" href="#obtaining-a-pick-up" title="Permalink to this headline">¶</a></h4>
+<p>For every pick up collected, 50 points are given.</p>
+</div>
+<div class="section" id="neutralizing-a-control-point">
+<h4>Neutralizing a control point<a class="headerlink" href="#neutralizing-a-control-point" title="Permalink to this headline">¶</a></h4>
+<p>Every time a control point changes from owned by the enemy team to neutral, you get 50 points. This also applies to Mainframes.</p>
+</div>
+<div class="section" id="capturing-a-control-point">
+<h4>Capturing a control point<a class="headerlink" href="#capturing-a-control-point" title="Permalink to this headline">¶</a></h4>
+<p>Every time a control point changes from neutral state to owned by your team, you get 200 points. This also applies to Mainframes.</p>
+</div>
+<div class="section" id="holding-a-control-point">
+<h4>Holding a control point<a class="headerlink" href="#holding-a-control-point" title="Permalink to this headline">¶</a></h4>
+<p>Every control point on the field that belongs to your team will give you 75 points per turn. So holding 2 control points for 10 turns gives you (2 * 10 * 75) = 1500 points. This also applies to Mainframes.</p>
+</div>
+<div class="section" id="losing-a-control-point">
+<h4>Losing a control point<a class="headerlink" href="#losing-a-control-point" title="Permalink to this headline">¶</a></h4>
+<p>Every time a control point owned by your team is neutralized, you <strong>lose</strong> 725 points. This also applies to Mainframes.</p>
+</div>
+<div class="section" id="stalemate">
+<h4>Stalemate<a class="headerlink" href="#stalemate" title="Permalink to this headline">¶</a></h4>
+<p>A stalemate occurs if either the turn limit is reached and both squads have at least one unit alive, or if the last surviving unit in both squads is eliminated on the same turn.
+This does not mean the scores of both teams will be equal, and there may still be a distinct winner. Think of this more as <strong>a bonus awarded to both teams for surviving the same amount of turns</strong>.</p>
+</div>
+<div class="section" id="exploring-the-map">
+<h4>Exploring the map<a class="headerlink" href="#exploring-the-map" title="Permalink to this headline">¶</a></h4>
+<p>Every time a unit on your squad lands on a tile no other unit in your squad has landed on before, you get 5 points.</p>
+</div>
+<div class="section" id="turn-survival-bonus">
+<h4>Turn survival bonus<a class="headerlink" href="#turn-survival-bonus" title="Permalink to this headline">¶</a></h4>
+<p>After (exactly) one squad is eliminated (and can&#8217;t respawn), the dead squad is awarded 20 points for every turn they survived.
+For example, if a game with a maximum turn limit of 75 ends on turn 60, the dead squad survived 60 turns and are subsequently awarded 1200 extra points.</p>
+</div>
+<div class="section" id="game-end-bonus">
+<h4>Game end bonus<a class="headerlink" href="#game-end-bonus" title="Permalink to this headline">¶</a></h4>
+<p>After (exactly) one squad is eliminated (and can&#8217;t respawn), the surviving squad is awarded 10 points for each turn until the turn limit, squared. That is, 10 * t^2 where
+t is the number of turns until the turn limit.
+For example, if a game with a maximum turn limit of 75 ends on turn 60, 15 turns are left giving the winner of the game 10*15^2 = 2250 extra points.</p>
+</div>
+</div>
+</div>
+<div class="section" id="submissions">
+<h2>Submissions<a class="headerlink" href="#submissions" title="Permalink to this headline">¶</a></h2>
+<p>Follow the following steps when you are ready to submit your submission.</p>
+<ol class="arabic simple">
+<li>Make sure all your source code and external libraries are zipped up.</li>
+</ol>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">To ensure your AI works correctly, make sure you test it in a game before submitting!</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>We only accept .zip files that are under 5 MB in size.</li>
+<li>The libraries that came in the development kits will be replaced when grading, so feel free to exclude them when creating your archive.</li>
+<li>Include any custom libraries that you use</li>
+</ul>
+</div>
+<ol class="arabic simple" start="2">
+<li>Upload your newly created archives on &#8216;Submit your AI&#8217; on your dashboard on The Challenge website. If you are working in a team, only one member has to upload it.</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You&#8217;re welcome to submit more than once, but only your latest submission before the submission deadline will be graded, so make sure that one works!</p>
+</div>
+</div>
+<div class="section" id="competition-format">
+<h2>Competition Format<a class="headerlink" href="#competition-format" title="Permalink to this headline">¶</a></h2>
+<p>The tournament is split into three parts.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>The elimination round</li>
+<li>The qualifiers</li>
+<li>The round robins</li>
+</ol>
+</div></blockquote>
+<p>The top 10 AIs from the round robin will be chosen for code review.
+The winners will be determined based on both their performance in the competition, and their code review.
+The top 5 winners will need to give a short presentation.</p>
+<div class="section" id="settings">
+<h3>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h3>
+<p>All games will be played using the following settings:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Minimum board size of 15, maximum board size of 30</li>
+<li>Maximum amount of time to make a move of 400 milliseconds</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="elimination">
+<h3>Elimination<a class="headerlink" href="#elimination" title="Permalink to this headline">¶</a></h3>
+<p>The elimination round will pit your AI against <strong>The B-Team</strong>. This AI is very easily defeated.</p>
+</div>
+<div class="section" id="qualifying">
+<h3>Qualifying<a class="headerlink" href="#qualifying" title="Permalink to this headline">¶</a></h3>
+<p>In this round your submission will play on various maps against 3 opponents of various difficulties.</p>
+<p>First up is a match against <strong>The Security Droids</strong>. This AI will put up a fight, but is not hard to outsmart.</p>
+<p>Second up are two matches against <strong>The SWAT Bots</strong>. This squad will use tactics specialized to the maps they play on.</p>
+<p>Finally, you play two matches against <strong>Cyb3r Team Zer0</strong>. This will demarcate the truly strong entries.</p>
+</div>
+<div class="section" id="round-robin-finals">
+<h3>Round Robin Finals<a class="headerlink" href="#round-robin-finals" title="Permalink to this headline">¶</a></h3>
+<p>Suppose your submission made it to the top 20. Congratulations! There are 19 other players here with you, so it&#8217;s time to battle it out. You&#8217;ll be playing a match against each opponent on multiple maps, it&#8217;s time to show them who&#8217;s the boss!</p>
+</div>
+<div class="section" id="algorithm-and-code-review">
+<h3>Algorithm and Code Review<a class="headerlink" href="#algorithm-and-code-review" title="Permalink to this headline">¶</a></h3>
+<p>This is the part where we judge you! Your AI has proven that it can perform, but how well coded is it? Be sure to make your code as readable as possible and leave some comments for the code reviewers to read!</p>
+</div>
+<div class="section" id="presentations">
+<h3>Presentations<a class="headerlink" href="#presentations" title="Permalink to this headline">¶</a></h3>
+<p>Not only do you have to code well, you should also be able to communicate your ideas fluently. The teams that have their submissions land in the top 5 after the playoffs and code review are asked to give a short presentation to talk about the problems they faced, and how they overcame them.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="faq.html" class="btn btn-neutral float-right" title="FAQ" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="custom_maps.html" class="btn btn-neutral" title="Making custom maps" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Orbis Access (Canada) Ltd..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/video.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

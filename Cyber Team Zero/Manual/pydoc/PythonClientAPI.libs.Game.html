@@ -1,0 +1,1434 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PythonClientAPI.libs.Game package &mdash; The Orbis Challenge 2016  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom-styles.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="The Orbis Challenge 2016  documentation" href="../index.html"/>
+        <link rel="prev" title="Python API Basics" href="../pythonapi.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> The Orbis Challenge 2016
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../installing.html">Installing Java/Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quick.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ide.html">Configuring your IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands.html">Command Line Arguments</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../game.html">The Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../custom_maps.html">Making custom maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenge.html">Scoring and the Tournament</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../javaapi.html">Java API Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pythonapi.html">Python API Basics</a></li>
+<li class="toctree-l1"><a class="reference external" href="_static/javadoc/index.html#://">Java API Javadoc</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Python API Docstrings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-PythonClientAPI.libs.Game.Entities">PythonClientAPI.libs.Game.Entities module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-PythonClientAPI.libs.Game.Enums">PythonClientAPI.libs.Game.Enums module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-PythonClientAPI.libs.Game.PointUtils">PythonClientAPI.libs.Game.PointUtils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-PythonClientAPI.libs.Game.Weapon">PythonClientAPI.libs.Game.Weapon module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-PythonClientAPI.libs.Game.World">PythonClientAPI.libs.Game.World module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-PythonClientAPI.libs.Game">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">The Orbis Challenge 2016</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>PythonClientAPI.libs.Game package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/pydoc/PythonClientAPI.libs.Game.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pythonclientapi-libs-game-package">
+<h1>PythonClientAPI.libs.Game package<a class="headerlink" href="#pythonclientapi-libs-game-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-PythonClientAPI.libs.Game.Entities">
+<span id="pythonclientapi-libs-game-entities-module"></span><h2>PythonClientAPI.libs.Game.Entities module<a class="headerlink" href="#module-PythonClientAPI.libs.Game.Entities" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Entities.ControlPoint">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Entities.</code><code class="descname">ControlPoint</code><span class="sig-paren">(</span><em>position</em>, <em>controllingTeam</em>, <em>name</em>, <em>enemies</em>, <em>isMainframe</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.ControlPoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#PythonClientAPI.libs.Game.Entities.Entity" title="PythonClientAPI.libs.Game.Entities.Entity"><code class="xref py py-class docutils literal"><span class="pre">PythonClientAPI.libs.Game.Entities.Entity</span></code></a></p>
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.ControlPoint.get_num_enemy_units_around">
+<code class="descname">get_num_enemy_units_around</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.ControlPoint.get_num_enemy_units_around" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of enemy units that are on tiles adjacent to or on this control point.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Entities.EnemyUnit">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Entities.</code><code class="descname">EnemyUnit</code><span class="sig-paren">(</span><em>position</em>, <em>team</em>, <em>call_sign</em>, <em>weaponType</em>, <em>health</em>, <em>shieldedTurnsRemaining</em>, <em>numShields</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.EnemyUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#PythonClientAPI.libs.Game.Entities.Unit" title="PythonClientAPI.libs.Game.Entities.Unit"><code class="xref py py-class docutils literal"><span class="pre">PythonClientAPI.libs.Game.Entities.Unit</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Entities.Entity">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Entities.</code><code class="descname">Entity</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.Entity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>A general game object with x and y coordinates representing its location on the gameboard.</p>
+<dl class="docutils">
+<dt>Attributes:</dt>
+<dd>position (int,int): Represents the x and y-coordinate on the gameboard.</dd>
+</dl>
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Entities.</code><code class="descname">FriendlyUnit</code><span class="sig-paren">(</span><em>position</em>, <em>team</em>, <em>call_sign</em>, <em>weaponType</em>, <em>health</em>, <em>shieldedTurnsRemaining</em>, <em>numShields</em>, <em>lastMoveResult</em>, <em>lastShotResult</em>, <em>lastPickupResult</em>, <em>lastShieldActivationResult</em>, <em>lastShooters</em>, <em>damageTakenLastTurn</em>, <em>world</em>, <em>enemies</em>, <em>friendlies</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#PythonClientAPI.libs.Game.Entities.Unit" title="PythonClientAPI.libs.Game.Entities.Unit"><code class="xref py py-class docutils literal"><span class="pre">PythonClientAPI.libs.Game.Entities.Unit</span></code></a></p>
+<p>This class represents a unit your AI can control.</p>
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit.activate_shield">
+<code class="descname">activate_shield</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.activate_shield" title="Permalink to this definition">¶</a></dt>
+<dd><p>Orders the unit to activate a shield this turn.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.ActivateShieldResult" title="PythonClientAPI.libs.Game.Enums.ActivateShieldResult">ActivateShieldResult</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">If the unit is dead, returns ActivateShieldResult.UNIT_DEAD,
+if the unit has no shields, returns ActivateShieldResult.NO_SHIELDS_AVAILABLE,
+otherwise returns ActivateShieldResult.SHIELD_ACTIVATION_VALID.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit.check_move_in_direction">
+<code class="descname">check_move_in_direction</code><span class="sig-paren">(</span><em>direction</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.check_move_in_direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether this unit can move one tile in the given direction.
+Does not actually move the unit. This check does not take into account the positions
+of friendly and enemy units as they might change by the time the move is actually performed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>direction</strong> (<a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.Direction" title="PythonClientAPI.libs.Game.Enums.Direction"><em>Direction</em></a>) &#8211; The direction to check.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The expected result if you were to try to move.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.MoveResult" title="PythonClientAPI.libs.Game.Enums.MoveResult">MoveResult</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit.check_move_to_destination">
+<code class="descname">check_move_to_destination</code><span class="sig-paren">(</span><em>destination</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.check_move_to_destination" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether this unit can move one tile on the path to the given Point. This will use the built in
+path-finding system to find the next move along the shortest path.
+Does not actually move the unit. This check does not take into account the positions
+of friendly and enemy units as they might change by the time the move is actually performed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>destination</strong> (<em>(int,int)</em>) &#8211; The point to move towards.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.MoveResult" title="PythonClientAPI.libs.Game.Enums.MoveResult">MoveResult</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The expected result if you were to try to move. If this is NO_MOVE_ATTEMPTED, then a path could not be
+found to the destination point.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit.check_pickup_result">
+<code class="descname">check_pickup_result</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.check_pickup_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if there is a pickup item at this unit&#8217;s position</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.PickupResult" title="PythonClientAPI.libs.Game.Enums.PickupResult">PickupResult</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">PickupResult.PICK_UP_VALID if there is a pickup, or PickupResult.NOTHING_TO_PICK_UP if there isn&#8217;t.
+Note, you can find the exact type of pickup by getting a reference to it with <code class="xref py py-func docutils literal"><span class="pre">World.get_pickup_at_position()</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit.check_shield_activation">
+<code class="descname">check_shield_activation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.check_shield_activation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the result of trying to activate a shield.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.ActivateShieldResult" title="PythonClientAPI.libs.Game.Enums.ActivateShieldResult">ActivateShieldResult</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">If the unit is dead, returns ActivateShieldResult.UNIT_DEAD,
+if the unit has no shields, returns ActivateShieldResult.NO_SHIELDS_AVAILABLE,
+otherwise returns ActivateShieldResult.SHIELD_ACTIVATION_VALID.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit.check_shot_against_enemy">
+<code class="descname">check_shot_against_enemy</code><span class="sig-paren">(</span><em>enemy</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.check_shot_against_enemy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks the expected result if this unit tries to shoot the given enemy unit with
+<a class="reference internal" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.shoot_at" title="PythonClientAPI.libs.Game.Entities.FriendlyUnit.shoot_at"><code class="xref py py-meth docutils literal"><span class="pre">shoot_at()</span></code></a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enemy</strong> (<a class="reference internal" href="#PythonClientAPI.libs.Game.Entities.EnemyUnit" title="PythonClientAPI.libs.Game.Entities.EnemyUnit"><em>EnemyUnit</em></a>) &#8211; The enemy unit to try to check the shot against.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The expected result if you tried to shoot this enemy unit.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.ShotResult" title="PythonClientAPI.libs.Game.Enums.ShotResult">ShotResult</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit.get_last_turn_shooters">
+<code class="descname">get_last_turn_shooters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.get_last_turn_shooters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of EnemyUnits that shot this FriendlyUnit last turn.
+Can be an empty array of nobody shot this FriendlyUnit.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list of EnemyUnit</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit.move">
+<code class="descname">move</code><span class="sig-paren">(</span><em>direction</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.move" title="Permalink to this definition">¶</a></dt>
+<dd><p>Orders this Unit to move one tile in the given direction at the end of this turn.
+Note that the unit will not move until the turn is over.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>direction</strong> (<a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.Direction" title="PythonClientAPI.libs.Game.Enums.Direction"><em>Direction</em></a>) &#8211; The direction to move in</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The result of attempting to make this move. If this is MOVE_VALID, this does not guarantee
+the move will succeed. The move will succeed ONLY if no enemy or friendly stays in, or attempts to move
+to the tile in the given Direction. Thus you won&#8217;t know the final result of the move until the current turn completes.
+You can find out the result of the move from the previous turn from <code class="xref py py-meth docutils literal"><span class="pre">FriendlyUnit.getLastMoveResult()</span></code>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.MoveResult" title="PythonClientAPI.libs.Game.Enums.MoveResult">MoveResult</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit.move_to_destination">
+<code class="descname">move_to_destination</code><span class="sig-paren">(</span><em>destination</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.move_to_destination" title="Permalink to this definition">¶</a></dt>
+<dd><p>Orders this unit to move one tile towards the given destination. This will use the built in
+path-finding system to find the next move along the shortest path.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>destination</strong> (<em>(int,int)</em>) &#8211; The point to move towards.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The result of attempting to make this move. If this is MOVE_VALID, this does not guarantee
+the move will succeed. The move will succeed ONLY if no enemy or friendly stays in, or attempts to move
+to the tile in the given Direction. Thus you won&#8217;t know the final result of the move until the current turn completes.
+You can find out the result of the move from the previous turn from <code class="xref py py-meth docutils literal"><span class="pre">FriendlyUnit.getLastMoveResult()</span></code>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.MoveResult" title="PythonClientAPI.libs.Game.Enums.MoveResult">MoveResult</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit.pickup_item_at_position">
+<code class="descname">pickup_item_at_position</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.pickup_item_at_position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tries to pickup the pickup item at this unit&#8217;s position. If there is an item, then picking it up will be
+this unit&#8217;s action for the next turn.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">PickupResult.PICK_UP_VALID if there is a pickup, or PickupResult.NOTHING_TO_PICK_UP if there isn&#8217;t.
+Note, you can find the exact type of pickup by getting a reference to it with <code class="xref py py-func docutils literal"><span class="pre">World.get_pickup_at_position()</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.PickupResult" title="PythonClientAPI.libs.Game.Enums.PickupResult">PickupResult</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit.shoot_at">
+<code class="descname">shoot_at</code><span class="sig-paren">(</span><em>enemy_unit</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.shoot_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Orders this Unit to fire its weapon at the given enemy unit at the end of this turn.
+Note that damage will not be applied until the turn is over.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enemy_unit</strong> (<a class="reference internal" href="#PythonClientAPI.libs.Game.Entities.EnemyUnit" title="PythonClientAPI.libs.Game.Entities.EnemyUnit"><em>EnemyUnit</em></a>) &#8211; The enemy unit to shoot at.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The expected result of trying to shoot the enemy.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.ShotResult" title="PythonClientAPI.libs.Game.Enums.ShotResult">ShotResult</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Entities.FriendlyUnit.standby">
+<code class="descname">standby</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit.standby" title="Permalink to this definition">¶</a></dt>
+<dd><p>Orders this unit to do nothing and stay in place this turn.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Entities.Pickup">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Entities.</code><code class="descname">Pickup</code><span class="sig-paren">(</span><em>position</em>, <em>type</em>, <em>pickedUp</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.Pickup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#PythonClientAPI.libs.Game.Entities.Entity" title="PythonClientAPI.libs.Game.Entities.Entity"><code class="xref py py-class docutils literal"><span class="pre">PythonClientAPI.libs.Game.Entities.Entity</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Entities.Unit">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Entities.</code><code class="descname">Unit</code><span class="sig-paren">(</span><em>position</em>, <em>team</em>, <em>call_sign</em>, <em>weaponType</em>, <em>health</em>, <em>shieldedTurnsRemaining</em>, <em>numShields</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Entities.Unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#PythonClientAPI.libs.Game.Entities.Entity" title="PythonClientAPI.libs.Game.Entities.Entity"><code class="xref py py-class docutils literal"><span class="pre">PythonClientAPI.libs.Game.Entities.Entity</span></code></a></p>
+<p>A general object representing a unit</p>
+<p>Inherits from Entity.</p>
+<dl class="docutils">
+<dt>Attributes:</dt>
+<dd>team (Team): Unit team
+call_sign (CallSign): Unit call sign
+health (int): Unit health
+current_weapon_type (WeaponType): The current weapon the unit has equipped</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-PythonClientAPI.libs.Game.Enums">
+<span id="pythonclientapi-libs-game-enums-module"></span><h2>PythonClientAPI.libs.Game.Enums module<a class="headerlink" href="#module-PythonClientAPI.libs.Game.Enums" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Enums.ATZEncoder">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Enums.</code><code class="descname">ATZEncoder</code><span class="sig-paren">(</span><em>skipkeys=False</em>, <em>ensure_ascii=True</em>, <em>check_circular=True</em>, <em>allow_nan=True</em>, <em>sort_keys=False</em>, <em>indent=None</em>, <em>separators=None</em>, <em>default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ATZEncoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">json.encoder.JSONEncoder</span></code></p>
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Enums.ATZEncoder.default">
+<code class="descname">default</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ATZEncoder.default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Enums.ActivateShieldResult">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Enums.</code><code class="descname">ActivateShieldResult</code><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ActivateShieldResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ActivateShieldResult.NO_SHIELDS_AVAILABLE">
+<code class="descname">NO_SHIELDS_AVAILABLE</code><em class="property"> = &lt;ActivateShieldResult.NO_SHIELDS_AVAILABLE: 1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ActivateShieldResult.NO_SHIELDS_AVAILABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>This unit does not have any shields in its inventory. One must be picked up first.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ActivateShieldResult.NO_SHIELD_ACTIVATION_ATTEMPTED">
+<code class="descname">NO_SHIELD_ACTIVATION_ATTEMPTED</code><em class="property"> = &lt;ActivateShieldResult.NO_SHIELD_ACTIVATION_ATTEMPTED: 0&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ActivateShieldResult.NO_SHIELD_ACTIVATION_ATTEMPTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>No activation was attempted</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ActivateShieldResult.SHIELD_ACTIVATION_COMPLETE">
+<code class="descname">SHIELD_ACTIVATION_COMPLETE</code><em class="property"> = &lt;ActivateShieldResult.SHIELD_ACTIVATION_COMPLETE: 3&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ActivateShieldResult.SHIELD_ACTIVATION_COMPLETE" title="Permalink to this definition">¶</a></dt>
+<dd><p>The shield was activated successfully</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ActivateShieldResult.SHIELD_ACTIVATION_VALID">
+<code class="descname">SHIELD_ACTIVATION_VALID</code><em class="property"> = &lt;ActivateShieldResult.SHIELD_ACTIVATION_VALID: 2&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ActivateShieldResult.SHIELD_ACTIVATION_VALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>The shield is preliminarily expected to activate successfully. It should become active this turn.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ActivateShieldResult.UNIT_DEAD">
+<code class="descname">UNIT_DEAD</code><em class="property"> = &lt;ActivateShieldResult.UNIT_DEAD: -1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ActivateShieldResult.UNIT_DEAD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Enums.CallSign">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Enums.</code><code class="descname">CallSign</code><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.CallSign" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.CallSign.ALPHA">
+<code class="descname">ALPHA</code><em class="property"> = &lt;CallSign.ALPHA: 0&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.CallSign.ALPHA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.CallSign.BRAVO">
+<code class="descname">BRAVO</code><em class="property"> = &lt;CallSign.BRAVO: 1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.CallSign.BRAVO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.CallSign.CHARLIE">
+<code class="descname">CHARLIE</code><em class="property"> = &lt;CallSign.CHARLIE: 2&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.CallSign.CHARLIE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.CallSign.DELTA">
+<code class="descname">DELTA</code><em class="property"> = &lt;CallSign.DELTA: 3&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.CallSign.DELTA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Enums.</code><code class="descname">Direction</code><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">enum.Enum</span></code></p>
+<p>Represents 8 cardinal directions that Units can move or shoot in.
+Their value is a coordinate offset represented by a single move of 1 tile in that direction.</p>
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.EAST">
+<code class="descname">EAST</code><em class="property"> = &lt;Direction.EAST: (1, 0)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.EAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.NORTH">
+<code class="descname">NORTH</code><em class="property"> = &lt;Direction.NORTH: (0, -1)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.NORTH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.NORTH_EAST">
+<code class="descname">NORTH_EAST</code><em class="property"> = &lt;Direction.NORTH_EAST: (1, -1)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.NORTH_EAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.NORTH_WEST">
+<code class="descname">NORTH_WEST</code><em class="property"> = &lt;Direction.NORTH_WEST: (-1, -1)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.NORTH_WEST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.NOWHERE">
+<code class="descname">NOWHERE</code><em class="property"> = &lt;Direction.NOWHERE: (0, 0)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.NOWHERE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.SOUTH">
+<code class="descname">SOUTH</code><em class="property"> = &lt;Direction.SOUTH: (0, 1)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.SOUTH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.SOUTH_EAST">
+<code class="descname">SOUTH_EAST</code><em class="property"> = &lt;Direction.SOUTH_EAST: (1, 1)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.SOUTH_EAST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.SOUTH_WEST">
+<code class="descname">SOUTH_WEST</code><em class="property"> = &lt;Direction.SOUTH_WEST: (-1, 1)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.SOUTH_WEST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.WEST">
+<code class="descname">WEST</code><em class="property"> = &lt;Direction.WEST: (-1, 0)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.WEST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.from_to">
+<em class="property">classmethod </em><code class="descname">from_to</code><span class="sig-paren">(</span><em>from_point</em>, <em>to_point</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.from_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates a direction between two points. The points do not have to be in a line, however the direction returned
+can only guarantee that it will move towards the &#8216;to&#8217; point along the path with the minimum moves.</p>
+<p>NOTE: This does not use path finding, and calculates results &#8220;as the crow flies&#8221;.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>from_point</strong> (<em>(int,int)</em>) &#8211; The point to start at</li>
+<li><strong>to_point</strong> (<em>(int,int)</em>) &#8211; The point to move towards</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.get_direction_from_vector">
+<em class="property">classmethod </em><code class="descname">get_direction_from_vector</code><span class="sig-paren">(</span><em>vector</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.get_direction_from_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns a vector into a direction.
+Any non-zero components will be normalized to 1 or -1.
+This means both (1, 1) and (1, 10) will become SOUTH_EAST, and both (-1, 0) and (-10, 0) will become WEST</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vector</strong> (<em>(int,int)</em>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.Direction" title="PythonClientAPI.libs.Game.Enums.Direction">Direction</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.move_point">
+<code class="descname">move_point</code><span class="sig-paren">(</span><em>point</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.move_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a new point who&#8217;s values are that of the given point moved 1 tile in this direction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>point</strong> (<em>(int,int)</em>) &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.rotate_clockwise">
+<code class="descname">rotate_clockwise</code><span class="sig-paren">(</span><em>times</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.rotate_clockwise" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a direction representing a number of clockwise turns of this direction.</p>
+<p>For example, 1 turn of NORTH is NORTH_EAST, 2 turns of NORTH is EAST
+:param int times: he number of clockwise turns
+:rtype: Direction</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Enums.Direction.rotate_counter_clockwise">
+<code class="descname">rotate_counter_clockwise</code><span class="sig-paren">(</span><em>times</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Direction.rotate_counter_clockwise" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a direction representing a number of clockwise turns of this direction.</p>
+<p>For example, 1 turn of NORTH is NORTH_EAST, 2 turns of NORTH is EAST
+:param int times: he number of clockwise turns
+:rtype: Direction</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Enums.MoveResult">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Enums.</code><code class="descname">MoveResult</code><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.MoveResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.MoveResult.BLOCKED_BY_ENEMY">
+<code class="descname">BLOCKED_BY_ENEMY</code><em class="property"> = &lt;MoveResult.BLOCKED_BY_ENEMY: 2&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.MoveResult.BLOCKED_BY_ENEMY" title="Permalink to this definition">¶</a></dt>
+<dd><p>The move was blocked by a unit on the enemy team</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.MoveResult.BLOCKED_BY_FRIENDLY">
+<code class="descname">BLOCKED_BY_FRIENDLY</code><em class="property"> = &lt;MoveResult.BLOCKED_BY_FRIENDLY: 1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.MoveResult.BLOCKED_BY_FRIENDLY" title="Permalink to this definition">¶</a></dt>
+<dd><p>The move was blocked by a unit on the same team</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.MoveResult.BLOCKED_BY_WORLD">
+<code class="descname">BLOCKED_BY_WORLD</code><em class="property"> = &lt;MoveResult.BLOCKED_BY_WORLD: 0&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.MoveResult.BLOCKED_BY_WORLD" title="Permalink to this definition">¶</a></dt>
+<dd><p>The move was blocked by a wall</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.MoveResult.MOVE_COMPLETED">
+<code class="descname">MOVE_COMPLETED</code><em class="property"> = &lt;MoveResult.MOVE_COMPLETED: 4&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.MoveResult.MOVE_COMPLETED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The move was executed successfully</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.MoveResult.MOVE_INVALID">
+<code class="descname">MOVE_INVALID</code><em class="property"> = &lt;MoveResult.MOVE_INVALID: 6&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.MoveResult.MOVE_INVALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>The move contained invalid data</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.MoveResult.MOVE_VALID">
+<code class="descname">MOVE_VALID</code><em class="property"> = &lt;MoveResult.MOVE_VALID: 5&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.MoveResult.MOVE_VALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>The move is preliminarily expected to execute successfully</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.MoveResult.NO_MOVE_ATTEMPTED">
+<code class="descname">NO_MOVE_ATTEMPTED</code><em class="property"> = &lt;MoveResult.NO_MOVE_ATTEMPTED: 3&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.MoveResult.NO_MOVE_ATTEMPTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>No move was attempted</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.MoveResult.UNIT_DEAD">
+<code class="descname">UNIT_DEAD</code><em class="property"> = &lt;MoveResult.UNIT_DEAD: -1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.MoveResult.UNIT_DEAD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupResult">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Enums.</code><code class="descname">PickupResult</code><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupResult.NOTHING_TO_PICK_UP">
+<code class="descname">NOTHING_TO_PICK_UP</code><em class="property"> = &lt;PickupResult.NOTHING_TO_PICK_UP: 1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupResult.NOTHING_TO_PICK_UP" title="Permalink to this definition">¶</a></dt>
+<dd><p>There is nothing to pick up</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupResult.NO_PICK_UP_ATTEMPTED">
+<code class="descname">NO_PICK_UP_ATTEMPTED</code><em class="property"> = &lt;PickupResult.NO_PICK_UP_ATTEMPTED: 0&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupResult.NO_PICK_UP_ATTEMPTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>No pick up was attempted</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupResult.PICK_UP_COMPLETE">
+<code class="descname">PICK_UP_COMPLETE</code><em class="property"> = &lt;PickupResult.PICK_UP_COMPLETE: 4&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupResult.PICK_UP_COMPLETE" title="Permalink to this definition">¶</a></dt>
+<dd><p>The pick-up was executed successfully</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupResult.PICK_UP_VALID">
+<code class="descname">PICK_UP_VALID</code><em class="property"> = &lt;PickupResult.PICK_UP_VALID: 2&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupResult.PICK_UP_VALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>The pick-up is preliminarily expected to execute successfully</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupResult.UNIT_DEAD">
+<code class="descname">UNIT_DEAD</code><em class="property"> = &lt;PickupResult.UNIT_DEAD: -1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupResult.UNIT_DEAD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupType">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Enums.</code><code class="descname">PickupType</code><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupType.REPAIR_KIT">
+<code class="descname">REPAIR_KIT</code><em class="property"> = &lt;PickupType.REPAIR_KIT: 0&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupType.REPAIR_KIT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupType.SHIELD">
+<code class="descname">SHIELD</code><em class="property"> = &lt;PickupType.SHIELD: 1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupType.SHIELD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupType.WEAPON_LASER_RIFLE">
+<code class="descname">WEAPON_LASER_RIFLE</code><em class="property"> = &lt;PickupType.WEAPON_LASER_RIFLE: 4&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupType.WEAPON_LASER_RIFLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupType.WEAPON_MINI_BLASTER">
+<code class="descname">WEAPON_MINI_BLASTER</code><em class="property"> = &lt;PickupType.WEAPON_MINI_BLASTER: 2&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupType.WEAPON_MINI_BLASTER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupType.WEAPON_RAIL_GUN">
+<code class="descname">WEAPON_RAIL_GUN</code><em class="property"> = &lt;PickupType.WEAPON_RAIL_GUN: 5&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupType.WEAPON_RAIL_GUN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.PickupType.WEAPON_SCATTER_GUN">
+<code class="descname">WEAPON_SCATTER_GUN</code><em class="property"> = &lt;PickupType.WEAPON_SCATTER_GUN: 3&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.PickupType.WEAPON_SCATTER_GUN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Enums.ShotResult">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Enums.</code><code class="descname">ShotResult</code><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ShotResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ShotResult.BLOCKED_BY_OTHER_ENEMY">
+<code class="descname">BLOCKED_BY_OTHER_ENEMY</code><em class="property"> = &lt;ShotResult.BLOCKED_BY_OTHER_ENEMY: 1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ShotResult.BLOCKED_BY_OTHER_ENEMY" title="Permalink to this definition">¶</a></dt>
+<dd><p>There is another enemy between the shooter and target</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ShotResult.BLOCKED_BY_WORLD">
+<code class="descname">BLOCKED_BY_WORLD</code><em class="property"> = &lt;ShotResult.BLOCKED_BY_WORLD: 0&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ShotResult.BLOCKED_BY_WORLD" title="Permalink to this definition">¶</a></dt>
+<dd><p>There is a wall between the shooter and target</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ShotResult.CAN_HIT_ENEMY">
+<code class="descname">CAN_HIT_ENEMY</code><em class="property"> = &lt;ShotResult.CAN_HIT_ENEMY: 5&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ShotResult.CAN_HIT_ENEMY" title="Permalink to this definition">¶</a></dt>
+<dd><p>The shot is preliminarily expected to hit its mark</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ShotResult.ENEMY_ALREADY_DEAD">
+<code class="descname">ENEMY_ALREADY_DEAD</code><em class="property"> = &lt;ShotResult.ENEMY_ALREADY_DEAD: 6&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ShotResult.ENEMY_ALREADY_DEAD" title="Permalink to this definition">¶</a></dt>
+<dd><p>The shot was attempted against an already dead enemy</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ShotResult.ENEMY_UNIT_SHIELDED">
+<code class="descname">ENEMY_UNIT_SHIELDED</code><em class="property"> = &lt;ShotResult.ENEMY_UNIT_SHIELDED: 8&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ShotResult.ENEMY_UNIT_SHIELDED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The unit is protected by a shield</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ShotResult.FRIENDLY_UNIT_SHIELDED">
+<code class="descname">FRIENDLY_UNIT_SHIELDED</code><em class="property"> = &lt;ShotResult.FRIENDLY_UNIT_SHIELDED: 9&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ShotResult.FRIENDLY_UNIT_SHIELDED" title="Permalink to this definition">¶</a></dt>
+<dd><p>The shooting unit is protected by a shield. Units can&#8217;t shoot when they are protected by a shield.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ShotResult.HIT_ENEMY">
+<code class="descname">HIT_ENEMY</code><em class="property"> = &lt;ShotResult.HIT_ENEMY: 2&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ShotResult.HIT_ENEMY" title="Permalink to this definition">¶</a></dt>
+<dd><p>The shot hit its mark</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ShotResult.NO_SHOT_ATTEMPTED">
+<code class="descname">NO_SHOT_ATTEMPTED</code><em class="property"> = &lt;ShotResult.NO_SHOT_ATTEMPTED: 4&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ShotResult.NO_SHOT_ATTEMPTED" title="Permalink to this definition">¶</a></dt>
+<dd><p>No shot was attempted</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ShotResult.SHOT_INVALID">
+<code class="descname">SHOT_INVALID</code><em class="property"> = &lt;ShotResult.SHOT_INVALID: 7&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ShotResult.SHOT_INVALID" title="Permalink to this definition">¶</a></dt>
+<dd><p>The shot contained invalid data</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ShotResult.TARGET_OUT_OF_RANGE">
+<code class="descname">TARGET_OUT_OF_RANGE</code><em class="property"> = &lt;ShotResult.TARGET_OUT_OF_RANGE: 3&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ShotResult.TARGET_OUT_OF_RANGE" title="Permalink to this definition">¶</a></dt>
+<dd><p>The target was not in range of the shot. Either too far or not in a line</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.ShotResult.UNIT_DEAD">
+<code class="descname">UNIT_DEAD</code><em class="property"> = &lt;ShotResult.UNIT_DEAD: -1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.ShotResult.UNIT_DEAD" title="Permalink to this definition">¶</a></dt>
+<dd><p>The unit trying to fire is dead.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Enums.Team">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Enums.</code><code class="descname">Team</code><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Team" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.Team.AMBER">
+<code class="descname">AMBER</code><em class="property"> = &lt;Team.AMBER: 0&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Team.AMBER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.Team.BLUE">
+<code class="descname">BLUE</code><em class="property"> = &lt;Team.BLUE: 1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Team.BLUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.Team.NONE">
+<code class="descname">NONE</code><em class="property"> = &lt;Team.NONE: -1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.Team.NONE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Enums.TileType">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Enums.</code><code class="descname">TileType</code><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.TileType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.TileType.AMBER_SPAWN">
+<code class="descname">AMBER_SPAWN</code><em class="property"> = &lt;TileType.AMBER_SPAWN: 2&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.TileType.AMBER_SPAWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.TileType.BLUE_SPAWN">
+<code class="descname">BLUE_SPAWN</code><em class="property"> = &lt;TileType.BLUE_SPAWN: 3&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.TileType.BLUE_SPAWN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.TileType.FLOOR">
+<code class="descname">FLOOR</code><em class="property"> = &lt;TileType.FLOOR: 1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.TileType.FLOOR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.TileType.WALL">
+<code class="descname">WALL</code><em class="property"> = &lt;TileType.WALL: 0&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.TileType.WALL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Enums.TileType.does_block_bullets">
+<code class="descname">does_block_bullets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.TileType.does_block_bullets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Enums.TileType.does_block_movement">
+<code class="descname">does_block_movement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.TileType.does_block_movement" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Enums.UnitAction">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Enums.</code><code class="descname">UnitAction</code><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.UnitAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.UnitAction.ACTIVATE_SHIELD">
+<code class="descname">ACTIVATE_SHIELD</code><em class="property"> = &lt;UnitAction.ACTIVATE_SHIELD: 3&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.UnitAction.ACTIVATE_SHIELD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.UnitAction.MOVE">
+<code class="descname">MOVE</code><em class="property"> = &lt;UnitAction.MOVE: 0&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.UnitAction.MOVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.UnitAction.PICK_UP">
+<code class="descname">PICK_UP</code><em class="property"> = &lt;UnitAction.PICK_UP: 2&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.UnitAction.PICK_UP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.UnitAction.SHOOT">
+<code class="descname">SHOOT</code><em class="property"> = &lt;UnitAction.SHOOT: 1&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.UnitAction.SHOOT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Enums.WeaponType">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Enums.</code><code class="descname">WeaponType</code><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.WeaponType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">enum.Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.WeaponType.LASER_RIFLE">
+<code class="descname">LASER_RIFLE</code><em class="property"> = &lt;WeaponType.LASER_RIFLE: (5, 15)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.WeaponType.LASER_RIFLE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.WeaponType.MINI_BLASTER">
+<code class="descname">MINI_BLASTER</code><em class="property"> = &lt;WeaponType.MINI_BLASTER: (4, 5)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.WeaponType.MINI_BLASTER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.WeaponType.RAIL_GUN">
+<code class="descname">RAIL_GUN</code><em class="property"> = &lt;WeaponType.RAIL_GUN: (10, 10)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.WeaponType.RAIL_GUN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.Enums.WeaponType.SCATTER_GUN">
+<code class="descname">SCATTER_GUN</code><em class="property"> = &lt;WeaponType.SCATTER_GUN: (2, 30)&gt;</em><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.WeaponType.SCATTER_GUN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Enums.WeaponType.get_damage">
+<code class="descname">get_damage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.WeaponType.get_damage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.Enums.WeaponType.get_range">
+<code class="descname">get_range</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Enums.WeaponType.get_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-PythonClientAPI.libs.Game.PointUtils">
+<span id="pythonclientapi-libs-game-pointutils-module"></span><h2>PythonClientAPI.libs.Game.PointUtils module<a class="headerlink" href="#module-PythonClientAPI.libs.Game.PointUtils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="PythonClientAPI.libs.Game.PointUtils.add_points">
+<code class="descclassname">PythonClientAPI.libs.Game.PointUtils.</code><code class="descname">add_points</code><span class="sig-paren">(</span><em>p1</em>, <em>p2</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.PointUtils.add_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds two points together</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>p1</strong> (<em>(int,int)</em>) &#8211; First point</li>
+<li><strong>p2</strong> (<em>(int,int)</em>) &#8211; Second point</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">(p1.x + p2.x, p1.y + p2.y)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">(int,int)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="PythonClientAPI.libs.Game.PointUtils.sub_points">
+<code class="descclassname">PythonClientAPI.libs.Game.PointUtils.</code><code class="descname">sub_points</code><span class="sig-paren">(</span><em>p1</em>, <em>p2</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.PointUtils.sub_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subtracts p2 from p1</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>p1</strong> (<em>(int,int)</em>) &#8211; First point</li>
+<li><strong>p2</strong> (<em>(int,int)</em>) &#8211; Second point</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">(p1.x - p2.x, p1.y - p2.y)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">(int,int)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="PythonClientAPI.libs.Game.PointUtils.scale_point">
+<code class="descclassname">PythonClientAPI.libs.Game.PointUtils.</code><code class="descname">scale_point</code><span class="sig-paren">(</span><em>point</em>, <em>scalar</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.PointUtils.scale_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multiplies the members of the given point by the given scalar</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>point</strong> (<em>(int,int)</em>) &#8211; The point to scale</li>
+<li><strong>scalar</strong> (<em>int</em>) &#8211; The scalar to multiply by</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">(point.x * scalar, point.y * scalar)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">(int,int)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="PythonClientAPI.libs.Game.PointUtils.get_point_sign">
+<code class="descclassname">PythonClientAPI.libs.Game.PointUtils.</code><code class="descname">get_point_sign</code><span class="sig-paren">(</span><em>point</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.PointUtils.get_point_sign" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the sign of the given point&#8217;s members</p>
+<p>:param (int,int)  The point to operate on
+:return: (sign(point.x), sign(point.y)) where sign of n &lt; 0 =&gt; -1, n == 0 =&gt; 0, n &gt; 0 =&gt; 1
+:rtype: (int,int)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="PythonClientAPI.libs.Game.PointUtils.are_points_inline">
+<code class="descclassname">PythonClientAPI.libs.Game.PointUtils.</code><code class="descname">are_points_inline</code><span class="sig-paren">(</span><em>p1</em>, <em>p2</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.PointUtils.are_points_inline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether two points are in a line with each other. That is, can one point be reached from the other
+by only travelling in one of the 8 cardinal directions.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>p1</strong> (<em>(int,int)</em>) &#8211; First point</li>
+<li><strong>p2</strong> (<em>(int,int)</em>) &#8211; Second point</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">True if the points are inline, False otherwise</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PythonClientAPI.libs.Game.PointUtils.chebyshev_distance">
+<code class="descclassname">PythonClientAPI.libs.Game.PointUtils.</code><code class="descname">chebyshev_distance</code><a class="headerlink" href="#PythonClientAPI.libs.Game.PointUtils.chebyshev_distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the Chebyshev (or chessboard) distance between the two given points.</p>
+<p>This is also the minimum number of moves that must be made to reach
+point b from point a or vice versa, assuming there are no obstacles in the way.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>point_1</strong> (<em>(int,int)</em>) &#8211; The starting point</li>
+<li><strong>point_2</strong> (<em>(int,int)</em>) &#8211; The destination point</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">int</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.PointUtils.memoized">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.PointUtils.</code><code class="descname">memoized</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.PointUtils.memoized" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Decorator. Caches a function&#8217;s return value each time it is called.
+If called later with the same arguments, the cached value is returned
+(not reevaluated). Taken from <a class="reference external" href="https://wiki.python.org/moin/PythonDecoratorLibrary#Memoize">https://wiki.python.org/moin/PythonDecoratorLibrary#Memoize</a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descclassname">PythonClientAPI.libs.Game.PointUtils.</code><code class="descname">scale_point</code></dt>
+<dd><p>Multiplies the members of the given point by the given scalar</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>point</strong> (<em>(int,int)</em>) &#8211; The point to scale</li>
+<li><strong>scalar</strong> (<em>int</em>) &#8211; The scalar to multiply by</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">(point.x * scalar, point.y * scalar)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">(int,int)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-PythonClientAPI.libs.Game.Weapon">
+<span id="pythonclientapi-libs-game-weapon-module"></span><h2>PythonClientAPI.libs.Game.Weapon module<a class="headerlink" href="#module-PythonClientAPI.libs.Game.Weapon" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.Weapon.ProjectileWeapon">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.Weapon.</code><code class="descname">ProjectileWeapon</code><a class="headerlink" href="#PythonClientAPI.libs.Game.Weapon.ProjectileWeapon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Utility class for performing shot checks.</p>
+<dl class="staticmethod">
+<dt id="PythonClientAPI.libs.Game.Weapon.ProjectileWeapon.check_shot_against_enemy">
+<em class="property">static </em><code class="descname">check_shot_against_enemy</code><span class="sig-paren">(</span><em>shooter</em>, <em>target_enemy</em>, <em>world</em>, <em>weapon_type</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Weapon.ProjectileWeapon.check_shot_against_enemy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the given shooter would be able to hit the given target enemy with the given weapon
+:param FriendlyUnit shooter: The shooting unit
+:param EnemyUnit target_enemy: The enemy the shooter is trying to hit
+:param World world: The world
+:param WeaponType weapon_type: The WeaponType to test with
+:return: A ShotResult indicated the expected outcome of the shot.
+:rtype: ShotResult</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="PythonClientAPI.libs.Game.Weapon.ProjectileWeapon.check_shot_against_point">
+<em class="property">static </em><code class="descname">check_shot_against_point</code><span class="sig-paren">(</span><em>shooter</em>, <em>target_point</em>, <em>world</em>, <em>weapon_type</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.Weapon.ProjectileWeapon.check_shot_against_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the given shooter would be able to hit the given target point with the given weapon
+:param Unit shooter: The shooting unit
+:param (int,int) target_point: The point the shooter is trying to hit
+:param World world: The world
+:param WeaponType weapon_type: The WeaponType to test with
+:return: A ShotResult indicated the expected outcome of the shot.
+:rtype: ShotResult</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-PythonClientAPI.libs.Game.World">
+<span id="pythonclientapi-libs-game-world-module"></span><h2>PythonClientAPI.libs.Game.World module<a class="headerlink" href="#module-PythonClientAPI.libs.Game.World" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="PythonClientAPI.libs.Game.World.World">
+<em class="property">class </em><code class="descclassname">PythonClientAPI.libs.Game.World.</code><code class="descname">World</code><span class="sig-paren">(</span><em>tiles</em>, <em>width</em>, <em>height</em>, <em>controlPointCores</em>, <em>pickupCores</em>, <em>enemies</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.World.World" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="PythonClientAPI.libs.Game.World.World.get_next_direction_in_path">
+<code class="descname">get_next_direction_in_path</code><span class="sig-paren">(</span><em>start</em>, <em>destination</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.World.World.get_next_direction_in_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the next direction in the shortest path from the given start tile to the given destination.
+Avoids walls, but not units. This function will run extremely quickly if the map has a navigation cache
+(.nac) file. All maps provided in the game and tournament will have this file. Check the manual for
+instructions on generating the files for your own custom maps.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>start</strong> (<em>(int,int)</em>) &#8211; The tile to start path finding from</li>
+<li><strong>destination</strong> (<em>(int,int)</em>) &#8211; The tile to try to find a path to</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.Direction" title="PythonClientAPI.libs.Game.Enums.Direction">Direction</a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The direction to move in from the start tile to get to the destination tile. Returns NOWHERE if there
+is no way to get to the destination or if the start tile is the same as the destination (you are already there).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.World.World.is_within_bounds">
+<code class="descname">is_within_bounds</code><span class="sig-paren">(</span><em>point</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.World.World.is_within_bounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the given point is within the world bounds</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>point</strong> (<em>(int,int)</em>) &#8211; The point to check</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.World.World.can_move_from_point_in_direction">
+<code class="descname">can_move_from_point_in_direction</code><span class="sig-paren">(</span><em>start</em>, <em>direction</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.World.World.can_move_from_point_in_direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true iff something located at point start could possibly move in the given direction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>start</strong> (<em>(int,int)</em>) &#8211; The point to start at</li>
+<li><strong>direction</strong> (<a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.Direction" title="PythonClientAPI.libs.Game.Enums.Direction"><em>Direction</em></a>) &#8211; The direction in which to check the move</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.World.World.can_shooter_shoot_target">
+<code class="descname">can_shooter_shoot_target</code><span class="sig-paren">(</span><em>shooter_pos</em>, <em>target_pos</em>, <em>max_distance=999999</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.World.World.can_shooter_shoot_target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true iff there is a clear line of fire from shooter to
+target. This takes walls into account.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>shooter_pos</strong> (<em>(int,int)</em>) &#8211; The source of the shot</li>
+<li><strong>target_pos</strong> (<em>(int,int)</em>) &#8211; The target of the shot</li>
+<li><strong>max_distance</strong> (<em>int</em>) &#8211; Maximum distance in tiles that the bullet can travel</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.World.World.get_closest_shootable_enemy_in_direction">
+<code class="descname">get_closest_shootable_enemy_in_direction</code><span class="sig-paren">(</span><em>shooter</em>, <em>direction</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.World.World.get_closest_shootable_enemy_in_direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Finds the closest <code class="xref py py-class docutils literal"><span class="pre">EnemyUnit</span></code> in the given <code class="xref py py-class docutils literal"><span class="pre">Direction</span></code> that can be shot by the given <code class="xref py py-class docutils literal"><span class="pre">FriendlyUnit</span></code>.
+Takes into account walls, and the FriendlyUnit&#8217;s shot range.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>shooter</strong> (<a class="reference internal" href="#PythonClientAPI.libs.Game.Entities.FriendlyUnit" title="PythonClientAPI.libs.Game.Entities.FriendlyUnit"><em>FriendlyUnit</em></a>) &#8211; The unit firing the shot</li>
+<li><strong>direction</strong> (<a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.Direction" title="PythonClientAPI.libs.Game.Enums.Direction"><em>Direction</em></a>) &#8211; The direction to look in</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The closest <code class="xref py py-class docutils literal"><span class="pre">EnemyUnit</span></code> that the <code class="xref py py-class docutils literal"><span class="pre">FriendlyUnit</span></code> can shoot, or None if no
+enemy can be shot in that direction.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#PythonClientAPI.libs.Game.Entities.EnemyUnit" title="PythonClientAPI.libs.Game.Entities.EnemyUnit">EnemyUnit</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.World.World.get_nearest_control_point">
+<code class="descname">get_nearest_control_point</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.World.World.get_nearest_control_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find and return the control point with the closest linear distance (i.e. ignoring any obstacles/walls;
+&#8220;as the crow flies&#8221;) to the given point. If no control points on the map, returns None.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>position</strong> &#8211; The Point to look from</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.World.World.get_path_length">
+<code class="descname">get_path_length</code><span class="sig-paren">(</span><em>start</em>, <em>destination</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.World.World.get_path_length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the length of the shortest path from the starting point to the end point.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">0 if the path does not exist or if the start and end points are the same, otherwise the length
+of the path (in tiles).</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>start</strong> (<em>(int,int)</em>) &#8211; The point to start the path at</li>
+<li><strong>destination</strong> (<em>(int,int)</em>) &#8211; The point to end the path at</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">int</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.World.World.get_pickup_at_position">
+<code class="descname">get_pickup_at_position</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.World.World.get_pickup_at_position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the pickup located at the given coordinates, or None if there is no pickup there.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>position</strong> (<em>(int,int)</em>) &#8211; The coordinates to check</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.PickupType" title="PythonClientAPI.libs.Game.Enums.PickupType">PickupType</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.World.World.get_positions_of_pickup_type">
+<code class="descname">get_positions_of_pickup_type</code><span class="sig-paren">(</span><em>pickup_type</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.World.World.get_positions_of_pickup_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all the coordinates of the map that contain a Pickup of the given PickupType
+Returns an empty list if there is no such pickup on the field.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pickup_type</strong> (<a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.PickupType" title="PythonClientAPI.libs.Game.Enums.PickupType"><em>PickupType</em></a>) &#8211; The type of pickup to look for.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list of (int,int)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PythonClientAPI.libs.Game.World.World.get_tile">
+<code class="descname">get_tile</code><span class="sig-paren">(</span><em>point</em><span class="sig-paren">)</span><a class="headerlink" href="#PythonClientAPI.libs.Game.World.World.get_tile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the TileType at the given point</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>point</strong> (<em>(int,int)</em>) &#8211; The point to check</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PythonClientAPI.libs.Game.Enums.TileType" title="PythonClientAPI.libs.Game.Enums.TileType">TileType</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-PythonClientAPI.libs.Game">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-PythonClientAPI.libs.Game" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../pythonapi.html" class="btn btn-neutral" title="Python API Basics" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Orbis Access (Canada) Ltd..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/video.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

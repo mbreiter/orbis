@@ -1,0 +1,153 @@
+Scoring and the Tournament
+==========================
+
+Here is where you can find information on how to do well in the Challenge. 
+
+	
+Grading Scheme
+--------------
+
+Scores are calculated at the end of the game. The final scores will be shown in the game, and a detailed breakdown will be logged in the server log.
+
+Point worths
+`````````````
+
+==================================			===========================================
+Eliminating the entire enemy squad			5000 points
+Destroying an enemy unit					100 points per enemy destroyed
+Hitting (shooting) an enemy unit			10 points per 1 damage dealt
+Obtaining a pick up							50 points
+Neutralizing a control point				50 points
+Capturing a control point					200 points
+Holding a control point						75 points per turn held
+Losing a control point						-725 points
+Stalemate       							800 points
+Exploring the map							5 points per new tile landed on
+Turn survival bonus							20 points per turn survived
+Game end bonus								10 points per turn left until draw, squared
+==================================			===========================================
+
+
+Eliminating the entire enemy squad
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Destroying the last of the 4 enemy units, while the enemy team does not have any Mainframes will score you 5000 points, and end the game.
+
+.. NOTE::
+  The winner of the round is the one with more **points**, not more enemy unit **eliminations**. This means you can get this bonus, and still lose the game.
+
+Destroying an enemy unit
+~~~~~~~~~~~~~~~~~~~~~~~~
+If your shot drops an enemy unit's health below 0, you are awarded 100 points, in addition to the points you get for damaging the enemy unit.
+
+Hitting (shooting) an enemy unit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Dealing damage to an enemy unit is worth 10 points per 1 point damage dealt. So hitting a unit with a weapon that does 25 damage is worth 250 points, even if that unit had less than 25 health.
+
+Obtaining a pick up
+~~~~~~~~~~~~~~~~~~~
+For every pick up collected, 50 points are given.
+
+Neutralizing a control point
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Every time a control point changes from owned by the enemy team to neutral, you get 50 points. This also applies to Mainframes.
+
+Capturing a control point
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Every time a control point changes from neutral state to owned by your team, you get 200 points. This also applies to Mainframes.
+
+Holding a control point
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Every control point on the field that belongs to your team will give you 75 points per turn. So holding 2 control points for 10 turns gives you (2 * 10 * 75) = 1500 points. This also applies to Mainframes.
+
+Losing a control point
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Every time a control point owned by your team is neutralized, you **lose** 725 points. This also applies to Mainframes.
+
+Stalemate
+~~~~~~~~~
+A stalemate occurs if either the turn limit is reached and both squads have at least one unit alive, or if the last surviving unit in both squads is eliminated on the same turn.
+This does not mean the scores of both teams will be equal, and there may still be a distinct winner. Think of this more as **a bonus awarded to both teams for surviving the same amount of turns**.
+
+Exploring the map
+~~~~~~~~~~~~~~~~~
+Every time a unit on your squad lands on a tile no other unit in your squad has landed on before, you get 5 points.
+
+Turn survival bonus
+~~~~~~~~~~~~~~~~~~~
+After (exactly) one squad is eliminated (and can't respawn), the dead squad is awarded 20 points for every turn they survived.
+For example, if a game with a maximum turn limit of 75 ends on turn 60, the dead squad survived 60 turns and are subsequently awarded 1200 extra points.
+
+Game end bonus
+~~~~~~~~~~~~~~
+After (exactly) one squad is eliminated (and can't respawn), the surviving squad is awarded 10 points for each turn until the turn limit, squared. That is, 10 * t^2 where
+t is the number of turns until the turn limit.
+For example, if a game with a maximum turn limit of 75 ends on turn 60, 15 turns are left giving the winner of the game 10*15^2 = 2250 extra points.
+
+
+
+Submissions
+-----------
+
+Follow the following steps when you are ready to submit your submission. 
+
+1. Make sure all your source code and external libraries are zipped up.
+
+.. Warning::
+	To ensure your AI works correctly, make sure you test it in a game before submitting!
+
+.. Note::
+	* We only accept .zip files that are under 5 MB in size. 
+	* The libraries that came in the development kits will be replaced when grading, so feel free to exclude them when creating your archive.
+	* Include any custom libraries that you use
+
+2. Upload your newly created archives on 'Submit your AI' on your dashboard on The Challenge website. If you are working in a team, only one member has to upload it.
+
+.. Note::	
+	You're welcome to submit more than once, but only your latest submission before the submission deadline will be graded, so make sure that one works!
+
+Competition Format
+--------------------
+
+The tournament is split into three parts. 
+
+    1. The elimination round
+    2. The qualifiers
+    3. The round robins
+
+The top 10 AIs from the round robin will be chosen for code review.
+The winners will be determined based on both their performance in the competition, and their code review.
+The top 5 winners will need to give a short presentation.
+
+Settings
+````````
+
+All games will be played using the following settings: 
+
+	* Minimum board size of 15, maximum board size of 30
+	* Maximum amount of time to make a move of 400 milliseconds
+	
+Elimination
+```````````
+The elimination round will pit your AI against **The B-Team**. This AI is very easily defeated.
+
+Qualifying
+`````````````
+In this round your submission will play on various maps against 3 opponents of various difficulties.
+
+First up is a match against **The Security Droids**. This AI will put up a fight, but is not hard to outsmart.
+
+Second up are two matches against **The SWAT Bots**. This squad will use tactics specialized to the maps they play on.
+
+Finally, you play two matches against **Cyb3r Team Zer0**. This will demarcate the truly strong entries.
+
+Round Robin Finals
+```````````````````
+Suppose your submission made it to the top 20. Congratulations! There are 19 other players here with you, so it's time to battle it out. You'll be playing a match against each opponent on multiple maps, it's time to show them who's the boss!
+
+Algorithm and Code Review
+`````````````````````````
+This is the part where we judge you! Your AI has proven that it can perform, but how well coded is it? Be sure to make your code as readable as possible and leave some comments for the code reviewers to read!
+
+Presentations
+`````````````
+Not only do you have to code well, you should also be able to communicate your ideas fluently. The teams that have their submissions land in the top 5 after the playoffs and code review are asked to give a short presentation to talk about the problems they faced, and how they overcame them.

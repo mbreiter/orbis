@@ -1,0 +1,294 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installing Java and Python &mdash; The Orbis Challenge 2016  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/custom-styles.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="The Orbis Challenge 2016  documentation" href="index.html"/>
+        <link rel="next" title="Quick start" href="quick.html"/>
+        <link rel="prev" title="Welcome!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> The Orbis Challenge 2016
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installing Java/Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#java-required">Java (Required)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-optional-only-if-you-want-to-program-your-ai-in-python">Python (Optional - only if you want to program your AI in Python)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quick.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ide.html">Configuring your IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands.html">Command Line Arguments</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="game.html">The Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_maps.html">Making custom maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="challenge.html">Scoring and the Tournament</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="javaapi.html">Java API Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pythonapi.html">Python API Basics</a></li>
+<li class="toctree-l1"><a class="reference external" href="_static/javadoc/index.html#://">Java API Javadoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydoc/PythonClientAPI.libs.Game.html">Python API Docstrings</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">The Orbis Challenge 2016</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Installing Java and Python</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/installing.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installing-java-and-python">
+<h1>Installing Java and Python<a class="headerlink" href="#installing-java-and-python" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can program your AI in Java or Python. However, Java is <strong>required</strong> to run the server regardless of what language you use to code your AI.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">JRE is enough if you are planning to make the AI in Python, but JDK is recommended.</p>
+</div>
+<p>Download the appropriate development kits from your profile page <a class="reference external" href="https://www.orbischallenge.com/dashboard/">here</a> . You will need to be logged into the dashboard.</p>
+<div class="section" id="java-required">
+<h2>Java (Required)<a class="headerlink" href="#java-required" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You may get a Windows Security Alert when you first run the server. This is because it is communicating to the clients on a local port.
+Allow Java to communicate on the network when prompted. You will also get asked for administrative rights when running the scripts, which you have to say &#8220;yes&#8221; in order to run.</p>
+</div>
+<p>Ensure your version of Java is 1.7 or greater. To check your version of Java, run the following in the command line:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">java</span> <span class="o">-</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>If the version is below 1.7, <a class="reference external" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">download</a> and install the latest version of JDK from Oracle. Choose the installation file according to your platform.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Running The Challenge on a Windows machine and <strong>just installed</strong> Java?</p>
+<p>Click the start button and search for &#8220;edit the system environment variables&#8221;</p>
+<p>Click the corresponding application (&#8220;Environment Variables&#8221;).
+Under System variables, select the &#8220;Path&#8221; variable and click edit.</p>
+<p>Add <cite>C:\Program Files\Java\jdk1.8.0_101\bin</cite></p>
+<p>Next, look for &#8220;JAVA_HOME&#8221; and click &#8220;Edit...&#8221; If it is not listed, click &#8220;New...&#8221; and set the name to be &#8220;JAVA_HOME&#8221;</p>
+<p>Set the value to be <cite>C:\Program Files\Java\jdk1.8.0_101</cite></p>
+<p class="last">The JDK version may not be exact, but all of them would have <cite>Java\jdk1.X.X_XX\bin</cite></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Running The Challenge on a Windows machine and <strong>just updated</strong> Java?</p>
+<p>Rerun <cite>java -version</cite></p>
+<p>Did you get an error message about the registry key and java looking for a certain version and finding another?</p>
+<p>If so, navigate to C:\Windows\System32</p>
+<p>There should be 3 files - &#8216;java.exe&#8217;, &#8216;javaw.exe&#8217;, &#8216;javaws.exe&#8217; - move these to another file location temporarily if you
+wish to revert to your previous version of Java.</p>
+<p class="last">Close and reopen the Command Prompt and rerun <cite>java -version</cite> to confirm the correct version.</p>
+</div>
+</div>
+<div class="section" id="python-optional-only-if-you-want-to-program-your-ai-in-python">
+<h2>Python (Optional - only if you want to program your AI in Python)<a class="headerlink" href="#python-optional-only-if-you-want-to-program-your-ai-in-python" title="Permalink to this headline">¶</a></h2>
+<p>For this competition, we will be using Python 3.5 if you wish to code your AI in python.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Python 3.5 or above is required, if you have an older version of Python. Upgrade <a class="reference external" href="https://www.python.org/downloads/">here</a></p>
+</div>
+<p>To ensure you have Python 3.5 installed, run the following from the command line for windows and see if it says 3.5 and above:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">py</span> <span class="o">-</span><span class="mi">3</span>
+</pre></div>
+</div>
+<p>Or for Linux/Mac Systems:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">python3</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">On Mac System, both commands may not work. Take a look <a class="reference external" href="https://docs.python.org/3/using/mac.html">here</a> .</p>
+</div>
+<p>If Python is not a recognized command, <a class="reference external" href="https://www.python.org/downloads/">download</a> and install the appropriate version. Rerun this command to ensure that Python 3.5 or higher is now being used. If Python is installed but not working in command line, check the note below and edit your environment variable.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Running The Challenge on a Windows machine and <strong>just installed</strong> Python or python is not included in your path?</p>
+<p>Then you will need to modify an Environment Variable.
+Click the start button and search for &#8220;Edit the system environment variables&#8221; and click the corresponding application (&#8220;Environment Variables&#8221;).
+Under System variables, select the &#8220;Path&#8221; variable and click edit.
+If you are using Python, append <cite>C:\Program Files (x86)\Python35-32;C:\Program Files (x86)Python35-32\Scripts</cite>
+If you installed Python to a different folder, then you should append that one to your PATH rather than the above.</p>
+<p class="last">The folder may not be exact but should be similar to &#8216;Python35-XX&#8217; and should contain &#8216;python.exe&#8217;</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="quick.html" class="btn btn-neutral float-right" title="Quick start" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Orbis Access (Canada) Ltd..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/video.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

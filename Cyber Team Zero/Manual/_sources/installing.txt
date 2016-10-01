@@ -1,0 +1,90 @@
+Installing Java and Python
+==========================
+
+.. NOTE::
+  You can program your AI in Java or Python. However, Java is **required** to run the server regardless of what language you use to code your AI.
+
+.. NOTE::
+	JRE is enough if you are planning to make the AI in Python, but JDK is recommended.
+	
+Download the appropriate development kits from your profile page `here <https://www.orbischallenge.com/dashboard/>`__ . You will need to be logged into the dashboard.
+
+Java (Required)
+******************
+.. NOTE::
+  You may get a Windows Security Alert when you first run the server. This is because it is communicating to the clients on a local port.
+  Allow Java to communicate on the network when prompted. You will also get asked for administrative rights when running the scripts, which you have to say "yes" in order to run.
+
+Ensure your version of Java is 1.7 or greater. To check your version of Java, run the following in the command line:
+
+::
+
+  > java -version
+
+If the version is below 1.7, `download <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>`__ and install the latest version of JDK from Oracle. Choose the installation file according to your platform. 
+
+.. NOTE::
+  Running The Challenge on a Windows machine and **just installed** Java?
+
+  Click the start button and search for "edit the system environment variables" 
+
+  Click the corresponding application ("Environment Variables").
+  Under System variables, select the "Path" variable and click edit. 
+
+  Add `C:\\Program Files\\Java\\jdk1.8.0_101\\bin`
+
+  Next, look for "JAVA_HOME" and click "Edit..." If it is not listed, click "New..." and set the name to be "JAVA_HOME" 
+
+  Set the value to be `C:\\Program Files\\Java\\jdk1.8.0_101`
+  
+  The JDK version may not be exact, but all of them would have `Java\\jdk1.X.X_XX\\bin`
+
+
+.. NOTE::
+  Running The Challenge on a Windows machine and **just updated** Java?
+
+  Rerun `java -version`
+  
+  Did you get an error message about the registry key and java looking for a certain version and finding another?
+  
+  If so, navigate to C:\\Windows\\System32
+  
+  There should be 3 files - 'java.exe', 'javaw.exe', 'javaws.exe' - move these to another file location temporarily if you 
+  wish to revert to your previous version of Java.
+  
+  Close and reopen the Command Prompt and rerun `java -version` to confirm the correct version.
+
+Python (Optional - only if you want to program your AI in Python)
+*******************************************************************
+
+For this competition, we will be using Python 3.5 if you wish to code your AI in python. 
+
+.. NOTE::
+	Python 3.5 or above is required, if you have an older version of Python. Upgrade `here <https://www.python.org/downloads/>`__
+
+To ensure you have Python 3.5 installed, run the following from the command line for windows and see if it says 3.5 and above:
+::
+
+  > py -3
+
+Or for Linux/Mac Systems:
+::
+
+  > python3
+  
+.. NOTE::
+  On Mac System, both commands may not work. Take a look `here <https://docs.python.org/3/using/mac.html>`__ .
+  
+If Python is not a recognized command, `download <https://www.python.org/downloads/>`__ and install the appropriate version. Rerun this command to ensure that Python 3.5 or higher is now being used. If Python is installed but not working in command line, check the note below and edit your environment variable.
+
+.. NOTE::
+  Running The Challenge on a Windows machine and **just installed** Python or python is not included in your path?
+
+  Then you will need to modify an Environment Variable.
+  Click the start button and search for "Edit the system environment variables" and click the corresponding application ("Environment Variables").
+  Under System variables, select the "Path" variable and click edit.
+  If you are using Python, append `C:\\Program Files (x86)\\Python35-32;C:\\Program Files (x86)\Python35-32\\Scripts`
+  If you installed Python to a different folder, then you should append that one to your PATH rather than the above.
+  
+  The folder may not be exact but should be similar to 'Python35-XX' and should contain 'python.exe'
+

@@ -1,0 +1,26 @@
+Command Line Arguments
+======================
+
+Command line arguments are for advanced users only. There is very little need to have to manually use them,
+however they are documented here for convenience. 
+
+Launcher.jar supported arguments
+--------------------------------
+
++---------------+-----------------------+-------------------------------------------------------------------------------------------+
+| Command line  | Possible values       | What it does                                                                              |
++===============+=======================+===========================================================================================+
+| -config       | name of match preset  | Starts the launcher and pre-loads the given preset from the MatchPresets folder.          |
++---------------+-----------------------+-------------------------------------------------------------------------------------------+
+| -nogui-s      | *N/A*                 | Runs the server without the GUI when the game is started.                                 |
++---------------+-----------------------+-------------------------------------------------------------------------------------------+
+| -nogui-l      | *N/A*                 | Skips the launcher, and starts the game immediately. -config must be specified.           |
++---------------+-----------------------+-------------------------------------------------------------------------------------------+
+| -no-hwa       | *N/A*                 | Disables hardware accelerated rendering in the game engine. This may severely degrade     |
+|               |                       | game performance, use only if the game does not run at all without this parameter.        |
++---------------+-----------------------+-------------------------------------------------------------------------------------------+
+
+
+.. NOTE::
+  Passing -nogui-l will cause Amber and Blue client logs to be written to Logs/Amber.log and Logs/Blue.log respectively.
+

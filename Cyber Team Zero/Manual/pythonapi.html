@@ -1,0 +1,459 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Python API Basics &mdash; The Orbis Challenge 2016  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/custom-styles.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="The Orbis Challenge 2016  documentation" href="index.html"/>
+        <link rel="next" title="PythonClientAPI.libs.Game package" href="pydoc/PythonClientAPI.libs.Game.html"/>
+        <link rel="prev" title="Java API Basics" href="javaapi.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> The Orbis Challenge 2016
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing Java/Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ide.html">Configuring your IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands.html">Command Line Arguments</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="game.html">The Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_maps.html">Making custom maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="challenge.html">Scoring and the Tournament</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="javaapi.html">Java API Basics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Python API Basics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-world">The World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#controlling-a-unit">Controlling a Unit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#moving">Moving</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shooting">Shooting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#obtaining-pick-ups">Obtaining Pick-ups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-shields">Using Shields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#utilities">Utilities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#path-finding">Path-finding</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="_static/javadoc/index.html#://">Java API Javadoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydoc/PythonClientAPI.libs.Game.html">Python API Docstrings</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">The Orbis Challenge 2016</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Python API Basics</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/pythonapi.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python-api-basics">
+<h1>Python API Basics<a class="headerlink" href="#python-api-basics" title="Permalink to this headline">¶</a></h1>
+<p>This page only contains the basics of the Python API. For the full API, see the <a class="reference internal" href="pydoc/PythonClientAPI.libs.Game.html"><span class="doc">Python docs</span></a>.</p>
+<div class="tldr admonition">
+<p class="first admonition-title">TL;DR</p>
+<p>The goal of your do_move method is to give each of your FriendlyUnits an action.</p>
+<p>Positions/Coordinates/Points in the Python API are represented using a tuple of two integers: (x, y).</p>
+<p>The game provides very fast path-finding. See <em>world.get_next_direction_in_path</em> and <em>FriendlyUnit.move_to(destination)</em>.</p>
+<p>The other APIs mostly give you various ways to get the positions of all the things you might want to path-find to.</p>
+<p>Note that the orders you give your units are not executed until <strong>after</strong> the turn ends (and your function exits).
+You can get the actual result of the execution in your next turn with <em>friendly_unit.last_move_result</em>, <em>.last_shot_result</em>, and <em>.last_pickup_result</em></p>
+<p class="last">The <em>PointUtils</em> and <em>Direction</em> classes have several useful utility methods.</p>
+</div>
+<p>All of the available information regarding the game is provided to the do_move method in PlayerAI.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Don&#8217;t change the function definition for do_move. This function is called by the client code (which you also shouldn&#8217;t modify) because when you submit your file only your PlayerAI file and any additional libraries are kept and any client code is removed. Thus, if you change the method, your code will cause an Exception and ultimately invalidate all of your work.</p>
+</div>
+<div class="section" id="the-world">
+<h2>The World<a class="headerlink" href="#the-world" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/Map.png" class="align-center" src="_images/Map.png" />
+<p>The top left coordinate of the world is (0, 0).</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span> <span class="c1"># Some sample code given the above map as a world</span>
+<span class="n">world</span><span class="o">.</span><span class="n">control_points</span>  <span class="c1"># An array of 2 ControlPoint instances</span>
+<span class="c1"># Mainframes are included in the above list. They are control points with .is_mainframe set to True.</span>
+<span class="n">world</span><span class="o">.</span><span class="n">pickups</span>  <span class="c1"># An array of 6 Pickup instances</span>
+<span class="n">world</span><span class="o">.</span><span class="n">get_positions_of_pickup_type</span><span class="p">(</span><span class="n">PickupType</span><span class="o">.</span><span class="n">WEAPON_LASER_RIFLE</span><span class="p">)</span>  <span class="c1">#  Returns [ (7, 5), (7, 9) ]</span>
+<span class="n">world</span><span class="o">.</span><span class="n">get_positions_of_pickup_type</span><span class="p">(</span><span class="n">PickupType</span><span class="o">.</span><span class="n">WEAPON_RAIL_GUN</span><span class="p">)</span>  <span class="c1">#  Returns empty list</span>
+<span class="n">world</span><span class="o">.</span><span class="n">get_nearest_control_point</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>  <span class="c1"># Returns Control Point at (1, 7)</span>
+<span class="n">world</span><span class="o">.</span><span class="n">get_nearest_control_point</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">controlling_team</span>  <span class="c1"># Evaluates to Team.AMBER</span>
+<span class="n">world</span><span class="o">.</span><span class="n">get_next_direction_in_path</span><span class="p">((</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># Returns Direction.SOUTH_WEST</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="controlling-a-unit">
+<h2>Controlling a Unit<a class="headerlink" href="#controlling-a-unit" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/MapUnits.png" class="align-center" src="_images/MapUnits.png" />
+<p><em>The units in this image have their index in their respective arrays labelled on the tile above them.
+The first row and column have been numbered as well. This is for convenience of interpreting the examples below and does not show in the real game.</em></p>
+<p><strong>Sample code below uses the above map as a world, and given the Amber units as friendly_units (subsequently Blue units are enemy_units)</strong></p>
+<div class="section" id="moving">
+<h3>Moving<a class="headerlink" href="#moving" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span></span> <span class="c1"># Checking a move</span>
+ <span class="c1"># ---------------</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">check_shot_against_enemy</span><span class="p">(</span><span class="n">Direction</span><span class="o">.</span><span class="n">NORTH_WEST</span><span class="p">)</span>
+     <span class="c1"># Returns MoveResult.MOVE_VALID.</span>
+     <span class="c1"># This will check collisions against the world, and conflicts with other units on your team.</span>
+     <span class="c1"># Keep in mind that check_shot_against_enemy will not actually move the unit.</span>
+     <span class="c1"># To order a unit to actually move, see `move` below.</span>
+
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">check_move_in_direction</span><span class="p">(</span><span class="n">Direction</span><span class="o">.</span><span class="n">NORTH</span><span class="p">)</span>
+     <span class="c1"># Returns MoveResult.BLOCKED_BY_WORLD.</span>
+     <span class="c1"># Since there is a wall one tile NORTH of Amber unit 3, it won&#39;t be able to move there.</span>
+
+ <span class="c1"># Checking a move to a destination:</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">check_move_to_destination</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+     <span class="c1"># Returns MoveResult.MOVE_VALID.</span>
+     <span class="c1"># This method will use path finding to figure out which direction to go in.</span>
+     <span class="c1"># It checks to make sure there is a path to the destination (if there is not then it returns MoveResult.NO_MOVE_ATTEMPTED),</span>
+     <span class="c1"># as well as collisions against the world, and conflicts with other units on your team.</span>
+
+ <span class="c1"># Moving a unit</span>
+ <span class="c1"># -------------</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">Direction</span><span class="o">.</span><span class="n">NORTH_WEST</span><span class="p">)</span>
+     <span class="c1"># Returns MoveResult.MOVE_VALID, and will move Amber unit 0 to (3, 4) at the end of the turn.</span>
+     <span class="c1"># This method simply moves the unit in the specified direction, and performs the same checks</span>
+     <span class="c1"># (and thus has the same return value) as check_move_in_direction or check_move_to_destination.</span>
+
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">move_to_destination</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+     <span class="c1"># Returns MoveResult.MOVE_VALID, and will move Amber unit 0 to (4, 4) at the end of the turn.</span>
+     <span class="c1"># This method will use path finding to figure out which direction to go in.</span>
+     <span class="c1"># It checks to make sure there is a path to the destination (if there is not then it returns MoveResult.NO_MOVE_ATTEMPTED),</span>
+     <span class="c1"># as well as collisions against the world, and conflicts with other units on your team.</span>
+
+ <span class="c1"># On the next turn</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">last_move_result</span>
+     <span class="c1"># Evaluates to MoveResult.MOVE_COMPLETED,</span>
+     <span class="c1"># assuming the move to (1, 1) was executed</span>
+
+ <span class="c1"># Conflicts with friendly units</span>
+ <span class="c1"># -----------------------------</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">move_to_destination</span><span class="p">(</span><span class="n">friendly_units</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">position</span><span class="p">)</span>
+     <span class="c1"># Returns MoveResult.MOVE_VALID.</span>
+     <span class="c1"># Keep in mind that unless you instruct unit 2 to move somewhere else in your turn, the move will fail,</span>
+     <span class="c1"># and friendly_units[3].last_move_result will return MoveResult.BLOCKED_BY_FRIENDLY in the next turn.</span>
+
+ <span class="c1"># Assuming the two calls below are made on the same turn</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">Direction</span><span class="o">.</span><span class="n">EAST</span><span class="p">)</span>
+     <span class="c1"># Returns MoveResult.MOVE_VALID, and will move Amber unit 3 to (12, 4) at the end of the turn</span>
+
+
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="n">Direction</span><span class="o">.</span><span class="n">NORTH</span><span class="p">)</span>
+     <span class="c1"># Returns MoveResult.BLOCKED_BY_FRIENDLY. Even though unit 3 has not yet actually moved,</span>
+     <span class="c1"># unit 2&#39;s move NORTH will result in a collision.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="shooting">
+<h3>Shooting<a class="headerlink" href="#shooting" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span></span> <span class="c1"># Checking a shot</span>
+ <span class="c1"># ---------------</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">check_shot_against_enemy</span><span class="p">(</span><span class="n">enemy_units</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+     <span class="c1"># Returns ShotResult.TARGET_OUT_OF_RANGE.</span>
+     <span class="c1"># This will check to make sure you can hit the given enemy from your current position,</span>
+     <span class="c1"># and take into consideration the world and your weapon range.</span>
+
+ <span class="c1"># Let&#39;s assume friendly_units[1] has a Laser Rifle (5 range, 15 damage)</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">check_shot_against_enemy</span><span class="p">(</span><span class="n">enemy_units</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+     <span class="c1"># Returns ShotResult.CAN_HIT_ENEMY.</span>
+     <span class="c1"># enemy_units[2] is in range and not obstructed, so the shot will hit.</span>
+     <span class="c1"># Keep in mind that you can only shoot the closest enemy, so if there was another enemy between</span>
+     <span class="c1"># friendly_units[1] and enemy_units[2], this method would return ShotResult.BLOCKED_BY_OTHER_ENEMY</span>
+
+ <span class="c1"># Shooting:</span>
+ <span class="c1"># ---------</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shoot_at</span><span class="p">(</span><span class="n">enemy_units</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+     <span class="c1"># Returns ShotResult.TARGET_OUT_OF_RANGE</span>
+     <span class="c1"># All though enemy_units[1] is close enough, shots can only be fired in one of the</span>
+     <span class="c1"># 8 directions.</span>
+
+ <span class="c1"># Again, let&#39;s assume friendly_units[1] has a Laser Rifle (5 range, 15 damage)</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">shoot_at</span><span class="p">(</span><span class="n">enemy_units</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+     <span class="c1"># Returns ShotResult.CAN_HIT_ENEMY, the same result as our</span>
+     <span class="c1"># check_shot_against_enemy call above (it performs the same checks).</span>
+     <span class="c1"># If this method is called, enemy_units[2] will find its face full of laser</span>
+     <span class="c1"># at the end of the turn.</span>
+
+
+ <span class="c1"># On the next turn</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">last_shot_result</span>
+     <span class="c1"># Evaluates to ShotResult.HIT_ENEMY</span>
+     <span class="c1"># Assuming the shoot_at call above was made.</span>
+
+ <span class="c1"># After the shot:</span>
+ <span class="c1"># ---------------</span>
+ <span class="c1"># On the next turn, from the other player&#39;s perspective (so friendly_units and enemy_units have swapped)</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">get_last_turn_shooters</span><span class="p">()</span>
+     <span class="c1"># Returns array of just enemy_units[1], since above it was friendly_units[1] (i.e. BRAVO)</span>
+     <span class="c1"># Since Amber&#39;s BRAVO unit was the only unit to shoot Blue&#39;s CHARLIE unit,</span>
+     <span class="c1"># it is the only one in this array.</span>
+
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">damage_taken_last_turn</span>
+     <span class="c1"># Evaluates to 15, since Amber&#39;s BRAVO has a Laser Rifle (which does 15 damage)</span>
+     <span class="c1"># If more units shot us, then this would be the sum of all their shots.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="obtaining-pick-ups">
+<h3>Obtaining Pick-ups<a class="headerlink" href="#obtaining-pick-ups" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span></span> <span class="c1"># Checking if there is a pick up under Unit 0&#39;s (Amber&#39;s ALPHA) feet:</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">check_pickup_result</span><span class="p">()</span>
+     <span class="c1"># Returns PickupResult.NOTHING_TO_PICK_UP, since there is nothing under the unit&#39;s feet.</span>
+
+ <span class="c1"># Trying to pick up will return the same thing as the check above</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">pickup_item_at_position</span><span class="p">()</span>
+     <span class="c1"># Returns PickupResult.NOTHING_TO_PICK_UP.</span>
+
+ <span class="c1"># (Amber) Unit 3 however, has a scatter gun underneath it.</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">pickup_item_at_position</span><span class="p">()</span>
+     <span class="c1"># Return PickupResult.PICK_UP_VALID, as there is a scatter gun there.</span>
+     <span class="c1"># The type of pick up can be determined like this:</span>
+
+<span class="n">world</span><span class="o">.</span><span class="n">get_pickup_at_position</span><span class="p">(</span><span class="n">friendly_units</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">position</span><span class="p">)</span><span class="o">.</span><span class="n">pickup_type</span>
+     <span class="c1"># Evaluates to PickupType.WEAPON_SCATTER_GUN</span>
+
+ <span class="c1"># On the next turn, assuming we executed friendly_units[3].pickup_item_at_position() above</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">last_pickup_result</span>
+     <span class="c1"># Evaluates to PickupResult.PICK_UP_COMPLETE, since there was an item.</span>
+     <span class="c1"># friendly_units[3] now has a scatter gun (friendly_units[3].current_weapon_type will now return WeaponType.SCATTER_GUN)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="using-shields">
+<h3>Using Shields<a class="headerlink" href="#using-shields" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Check if we can activate a shield (this will check if we have one in our inventory)</span>
+<span class="k">if</span> <span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">check_shield_activation</span><span class="p">()</span> <span class="o">==</span> <span class="n">ActivateShieldResult</span><span class="o">.</span><span class="n">SHIELD_ACTIVATION_VALID</span><span class="p">:</span>
+        <span class="c1"># Activate a shield</span>
+        <span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">activate_shield</span><span class="p">()</span>  <span class="c1"># Returns ActivateShieldResult.SHIELD_ACTIVATION_VALID, and will activate a shield this turn</span>
+
+<span class="c1"># Check if a shield is already active before we activate a new one</span>
+<span class="k">if</span> <span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">check_shield_activation</span><span class="p">()</span> <span class="o">==</span> <span class="n">ActivateShieldResult</span><span class="o">.</span><span class="n">SHIELD_ACTIVATION_VALID</span> <span class="ow">and</span> \
+        <span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shielded_turns_remaining</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="c1"># Activate a shield</span>
+        <span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">activate_shield</span><span class="p">()</span>  <span class="c1"># Returns ActivateShieldResult.SHIELD_ACTIVATION_VALID, and will activate a shield this turn</span>
+
+
+<span class="c1"># On the next turn...</span>
+<span class="n">friendly_units</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shielded_turns_remaining</span>  <span class="c1"># Evaluates to 5</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="utilities">
+<h3>Utilities<a class="headerlink" href="#utilities" title="Permalink to this headline">¶</a></h3>
+<p>The API features various utility methods. The more commonly used ones are below.
+The full list can be found in the <a href="#id1"><span class="problematic" id="id2">:doc:`Python docs &lt;pydoc/PythonClientAPI.libs.Game&gt;`_</span></a>.
+See the Doc Strings above for full descriptions of the methods.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span> <span class="c1"># Direction:</span>
+<span class="n">Direction</span><span class="o">.</span><span class="n">from_to</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>  <span class="c1"># Returns Direction.SOUTH_EAST; The direction between two points, i.e. the direction from Point a to Point b</span>
+<span class="n">Direction</span><span class="o">.</span><span class="n">NORTH</span><span class="o">.</span><span class="n">move_point</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>  <span class="c1"># Returns (0, 0). Moves a point one tile in the direction</span>
+
+ <span class="c1"># PointUtils:</span>
+<span class="kn">import</span> <span class="nn">PointUtils</span>
+
+<span class="n">add_points</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># Returns (2, 3); Adds two points together</span>
+<span class="n">sub_points</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># Returns (1, 1); Subtracts the second point from the first one</span>
+<span class="n">scale_point</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># Returns  (3, 6); Multiplies a point&#39;s members by a scalar</span>
+<span class="n">chebyshev_distance</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>  <span class="c1"># Returns 2; Calculates Chebyshev or Chessboard distance between two points</span>
+<span class="n">are_points_inline</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>  <span class="c1"># Returns True; Checks if two points are in a straight vertical, horizontal, or diagonal line from one another.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="path-finding">
+<h3>Path-finding<a class="headerlink" href="#path-finding" title="Permalink to this headline">¶</a></h3>
+<p>For your convenience, we have provided a built-in path-finding algorithm.
+It will provide the shortest possible path, however, it does not avoid enemy or friendly units, taking into account only the world geometry.
+The algorithm is used behind the scenes to return results in</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">world</span><span class="o">.</span><span class="n">get_next_direction_in_path</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">destination</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">world</span><span class="o">.</span><span class="n">get_path_length</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">destination</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">friendly_units</span><span class="o">.</span><span class="n">move_to</span><span class="p">(</span><span class="n">destination</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>In maps that have a compiled navigation cache (a &lt;map name&gt;.nac file; all maps created by us have one), the path-finding will be almost instant (run-time complexity <cite>O(1)</cite> ).
+On maps without this file, the client will display a warning upon starting, and the path-finding may be substantially slower.
+To create a cache for your custom maps, see <a class="reference internal" href="custom_maps.html"><span class="doc">Making custom maps</span></a>.</p>
+<p>If you need more advanced features in your path-finding, you are more than welcome to implement your own algorithm. Just keep an eye on that time limit!</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pydoc/PythonClientAPI.libs.Game.html" class="btn btn-neutral float-right" title="PythonClientAPI.libs.Game package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="javaapi.html" class="btn btn-neutral" title="Java API Basics" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Orbis Access (Canada) Ltd..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/video.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

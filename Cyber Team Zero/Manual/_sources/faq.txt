@@ -1,0 +1,22 @@
+FAQ
+===
+
+**Q: Do I use the weapon I pick up on the same turn I pick it up?**
+
+*A: You can only perform a single action, so you cannot shoot on the same turn you pick up a weapon.*
+
+**Q: Why might a move fail (meaning** *getLastMoveResult* **returns something other than MOVE_COMPLETED) even though the return value of** *move* **and** *checkMove* **was MOVE_VALID on the previous turn?**
+
+*A: Even though a move looks valid before the turn is executed, the circumstances can change during the turn, as both teams' actions are carried out at the same time. 
+For example, an enemy unit might try to move to the same tile as your unit. This couldn't have been known to you when you called* **move**.
+ 
+*Another example is if you tried to move your unit onto the same position as another friendly unit. This is a valid move because you may
+move the second unit out of the way at some later point in your code, which yields a valid sequence of moves in the end.*
+
+*Lastly, if you took too long to respond, the state of the world might have changed by the time your actions got processed. 
+Units might have moved into/out of the way causing your move/shot to fail.*
+
+**Q: Why is there no API for capturing/neutralizing control points?**
+
+*A: Control points are captured/neutralized the moment a unit lands on the adjacent tile. The state is updated every turn, including the turn on which the unit first moved there.
+This means your unit can move and shoot around the control point while still capturing it.*

@@ -1,0 +1,7 @@
+Enums module
+============
+
+.. automodule:: Enums
+    :members:
+    :undoc-members:
+    :show-inheritance:

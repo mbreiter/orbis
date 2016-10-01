@@ -1,0 +1,66 @@
+PythonClientAPI.libs.Game package
+=================================
+
+Submodules
+----------
+
+PythonClientAPI.libs.Game.Entities module
+-----------------------------------------
+
+.. automodule:: PythonClientAPI.libs.Game.Entities
+    :members:
+    :undoc-members:
+    :show-inheritance:
+	:exclude-members: __init__
+
+PythonClientAPI.libs.Game.Enums module
+--------------------------------------
+
+.. automodule:: PythonClientAPI.libs.Game.Enums
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+PythonClientAPI.libs.Game.PointUtils module
+-------------------------------------------
+
+.. automodule:: PythonClientAPI.libs.Game.PointUtils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+    :exclude-members: add_points,sub_points,get_point_sign,are_points_inline
+    
+    .. autofunction:: add_points(p1, p2)
+    .. autofunction:: sub_points(p1, p2)
+    .. autofunction:: scale_point(point, scalar)
+    .. autofunction:: get_point_sign(point)
+    .. autofunction:: are_points_inline(p1, p2)
+
+PythonClientAPI.libs.Game.Weapon module
+---------------------------------------
+
+.. automodule:: PythonClientAPI.libs.Game.Weapon
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+PythonClientAPI.libs.Game.World module
+--------------------------------------
+
+.. automodule:: PythonClientAPI.libs.Game.World
+    
+    .. autoclass:: World
+        :members:
+        :undoc-members:
+        :exclude-members: is_within_bounds,get_next_direction_in_path
+        
+        .. automethod:: get_next_direction_in_path(start, destination)
+        .. automethod:: is_within_bounds(point)  
+
+Module contents
+---------------
+
+.. automodule:: PythonClientAPI.libs.Game
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,394 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Making custom maps &mdash; The Orbis Challenge 2016  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/custom-styles.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="The Orbis Challenge 2016  documentation" href="index.html"/>
+        <link rel="next" title="Scoring and the Tournament" href="challenge.html"/>
+        <link rel="prev" title="Game Rules" href="game.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> The Orbis Challenge 2016
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="installing.html">Installing Java/Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ide.html">Configuring your IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands.html">Command Line Arguments</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="game.html">The Game</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Making custom maps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-png">The PNG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#amber-and-blue-spawn-points">Amber and Blue spawn points</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pick-ups">Pick-ups</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#compiling-a-navigation-cache">Compiling a Navigation Cache</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="challenge.html">Scoring and the Tournament</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="javaapi.html">Java API Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pythonapi.html">Python API Basics</a></li>
+<li class="toctree-l1"><a class="reference external" href="_static/javadoc/index.html#://">Java API Javadoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pydoc/PythonClientAPI.libs.Game.html">Python API Docstrings</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">The Orbis Challenge 2016</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Making custom maps</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/custom_maps.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="making-custom-maps">
+<h1>Making custom maps<a class="headerlink" href="#making-custom-maps" title="Permalink to this headline">¶</a></h1>
+<p>All the maps in Cyber Team Zero are located in the aptly named Maps folder.</p>
+<p>Making custom maps for Cyber Team Zero is very easy.
+As the more observant competitor will have noticed, each map consists of two files - a .png and a .nac file.</p>
+<p>In order to make your own map, you must first create the PNG. The .nac (the <strong>na</strong>vigation <strong>c</strong>ache) will be generated by the Map Compiler.</p>
+<div class="section" id="the-png">
+<h2>The PNG<a class="headerlink" href="#the-png" title="Permalink to this headline">¶</a></h2>
+<p>The PNG consists of a very simple format - each pixel represents a single tile.
+The different colours are different tile types. Note that the alpha channel has a special purpose.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="18%" />
+<col width="38%" />
+<col width="18%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>R, G, B</td>
+<td>Color Name</td>
+<td>Tile function</td>
+<td>Tile Image</td>
+</tr>
+<tr class="row-even"><td>0, 0, 0</td>
+<td>Black</td>
+<td>Wall</td>
+<td><img alt="wall" src="_images/wall.png" /></td>
+</tr>
+<tr class="row-odd"><td>255, 255, 255</td>
+<td>White</td>
+<td>Floor</td>
+<td><img alt="floor" src="_images/floor.png" /></td>
+</tr>
+<tr class="row-even"><td>SEE BELOW</td>
+<td>Yellow</td>
+<td>Amber Spawn</td>
+<td><img alt="floor" src="_images/floor.png" /></td>
+</tr>
+<tr class="row-odd"><td>SEE BELOW</td>
+<td>Blue</td>
+<td>Blue Spawn</td>
+<td><img alt="floor" src="_images/floor.png" /></td>
+</tr>
+<tr class="row-even"><td>128, 128, 128</td>
+<td>Grey</td>
+<td>Control Point (Neutral)</td>
+<td><img alt="cpnone" src="_images/control_none.png" /></td>
+</tr>
+<tr class="row-odd"><td>255, 0, 0</td>
+<td>Red</td>
+<td>Mainframe     (Amber)</td>
+<td><img alt="cpamber" src="_images/mainframe_amber.png" /></td>
+</tr>
+<tr class="row-even"><td>0, 255, 0</td>
+<td>Green</td>
+<td>Mainframe     (Blue)</td>
+<td><img alt="cpblue" src="_images/mainframe_blue.png" /></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="amber-and-blue-spawn-points">
+<h3>Amber and Blue spawn points<a class="headerlink" href="#amber-and-blue-spawn-points" title="Permalink to this headline">¶</a></h3>
+<p>The spawn points for Alpha, Bravo, Charlie, and Delta are individually color coded for each team.
+This is designed to enforce perfect symmetry in symmetrical maps.</p>
+<p>The spawn point color codes are listed here.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="23%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>R, G, B</td>
+<td>Team</td>
+<td>Call Sign</td>
+</tr>
+<tr class="row-even"><td>255, 255, 0</td>
+<td>Amber</td>
+<td>Alpha</td>
+</tr>
+<tr class="row-odd"><td>255, 255, 50</td>
+<td>Amber</td>
+<td>Bravo</td>
+</tr>
+<tr class="row-even"><td>255, 255, 100</td>
+<td>Amber</td>
+<td>Charlie</td>
+</tr>
+<tr class="row-odd"><td>255, 255, 150</td>
+<td>Amber</td>
+<td>Delta</td>
+</tr>
+<tr class="row-even"><td>0, 0, 255</td>
+<td>Blue</td>
+<td>Alpha</td>
+</tr>
+<tr class="row-odd"><td>0, 50, 255</td>
+<td>Blue</td>
+<td>Bravo</td>
+</tr>
+<tr class="row-even"><td>0, 100, 255</td>
+<td>Blue</td>
+<td>Charlie</td>
+</tr>
+<tr class="row-odd"><td>0, 150, 255</td>
+<td>Blue</td>
+<td>Delta</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="pick-ups">
+<h3>Pick-ups<a class="headerlink" href="#pick-ups" title="Permalink to this headline">¶</a></h3>
+<p>The alpha channel is used to indicate the type of pick up to put on the tile.</p>
+<p><strong>An alpha value of 255 indicates no pick up.</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="47%" />
+<col width="29%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Alpha</td>
+<td>Pick up Name</td>
+<td>Pick up Image</td>
+</tr>
+<tr class="row-even"><td>1</td>
+<td>Repair Kit</td>
+<td><img alt="health" src="_images/health.png" /></td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Blaster</td>
+<td><img alt="blaster" src="_images/blaster_hud.png" /></td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>Scatter Gun</td>
+<td><img alt="scatter" src="_images/scatter_hud.png" /></td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>Laser Rifle</td>
+<td><img alt="rifle" src="_images/rifle_hud.png" /></td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>Rail Gun Sniper</td>
+<td><img alt="sniper" src="_images/sniper_hud.png" /></td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>Shield</td>
+<td><img alt="shield" src="_images/shield.png" /></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Pickups can technically be placed inside walls. Although this would be a great way to confuse naive AI,
+no maps like that will be used in the tournament.</p>
+</div>
+</div>
+</div>
+<div class="section" id="compiling-a-navigation-cache">
+<h2>Compiling a Navigation Cache<a class="headerlink" href="#compiling-a-navigation-cache" title="Permalink to this headline">¶</a></h2>
+<p>Compiling a navigation cache is super easy.
+All you have to do is run the included CompileMap script (located in the Maps folder), and pass it your .png file as a parameter.</p>
+<p>Make sure your png file is in the Maps folder, and then run the script on it.</p>
+<p>For example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">CompileMap</span><span class="o">.</span><span class="n">bat</span> <span class="n">MySuperAwesomeCrazyEpicUberMap</span><span class="o">.</span><span class="n">png</span>
+</pre></div>
+</div>
+<p>It will crunch for a few seconds and spit out <em>MySuperAwesomeCrazyEpicUberMap.nac</em></p>
+<p>And that&#8217;s it! Note that while most maps of the size and complexity included with the starter kit will compile in a few seconds,
+very large and open maps will take exponentially more time to compile, so you may have to go grab a coffee or two. Or six.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="challenge.html" class="btn btn-neutral float-right" title="Scoring and the Tournament" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="game.html" class="btn btn-neutral" title="Game Rules" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Orbis Access (Canada) Ltd..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/video.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

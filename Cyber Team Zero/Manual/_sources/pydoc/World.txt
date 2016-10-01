@@ -1,0 +1,7 @@
+World module
+============
+
+.. automodule:: World
+    :members:
+    :undoc-members:
+    :show-inheritance:
